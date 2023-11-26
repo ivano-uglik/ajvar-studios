@@ -2,26 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.content-container {
+  width: 100%;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media (min-width: 640px) {
+  .content-container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .content-container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .content-container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .content-container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .content-container {
+    /* max-width: 1536px; */
+    max-width: 1200px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.marquee__part {
+  flex-shrink: 0;
+  padding: 0 4px;
+  font-smooth: always;
+}
+
+.marquee {
+  background: #77c400;
+  color: #eee;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.667vw;
+  padding: 32px 0;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee__inner {
+  -webkit-font-smoothing: antialiased;
+  width: fit-content;
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+}
+
+.bg-video {
+  background: url("../public/video-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1.5rem;
+  background-position: center;
+}
+
+.spin {
+  transition-duration: 0.5s;
+}
+.spin:hover {
+  transform: rotate(360deg);
+  scale: 150%;
 }
