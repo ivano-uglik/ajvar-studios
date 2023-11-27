@@ -56,7 +56,12 @@ export default function GameLayout({ className }: { className?: string }) {
       <div className="flex flex-col md:flex-row justify-center gap-24 md:gap-0 pb-16 content-container mx-auto">
         <div className="basis-1/2">
           <div>
-            <Image src={octocurseLogo} className="rounded-xl" unoptimized />
+            <Image
+              src={octocurseLogo}
+              alt="Octo Curse logo"
+              className="rounded-xl"
+              unoptimized
+            />
           </div>
           <h2
             className={`${unbounded.className} text-5xl lg:text-[4rem] font-black leading-relaxed text-octocurse`}
@@ -103,7 +108,12 @@ export default function GameLayout({ className }: { className?: string }) {
         </div>
         <div className="basis-1/2 lg:pt-16">
           <div>
-            <Image src={goboLogo} className="rounded-xl" unoptimized />
+            <Image
+              src={goboLogo}
+              alt="GoBo logo"
+              className="rounded-xl"
+              unoptimized
+            />
           </div>
           <h2
             className={`${unbounded.className} text-[4rem] font-black leading-relaxed text-gobo`}
@@ -134,7 +144,12 @@ export default function GameLayout({ className }: { className?: string }) {
       <div className="flex flex-col md:flex-row justify-center gap-24 md:gap-0 py-16 content-container mx-auto">
         <div className="basis-1/2 lg:pt-16">
           <div>
-            <Image src={bulletbrainsLogo} className="rounded-xl" unoptimized />
+            <Image
+              src={bulletbrainsLogo}
+              alt="Bullet & Brains logo"
+              className="rounded-xl"
+              unoptimized
+            />
           </div>
           <h2
             className={`${unbounded.className} text-5xl lg:text-[4rem] font-black leading-relaxed`}
