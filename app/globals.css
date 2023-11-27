@@ -73,3 +73,12 @@
   transform: rotate(360deg);
   scale: 150%;
 }
+
+.bg-games-gradient {
+  background: rgb(254, 243, 245);
+  background: linear-gradient(
+    180deg,
+    rgba(254, 243, 245, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

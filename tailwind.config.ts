@@ -15,6 +15,8 @@ const config: Config = {
       },
       colors: {
         ajvar: "#E41943",
+        octocurse: "#64E93B",
+        gobo: "#FEB72C",
       },
     },
   },
