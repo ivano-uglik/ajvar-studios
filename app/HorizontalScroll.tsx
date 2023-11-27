@@ -37,7 +37,7 @@ export default function HorizontalScroll() {
 
   return (
     <section
-      className={`${unbounded.className} bg-[#77C400] text-white uppercase font-bold text-3xl sticky bottom-0 overflow-hidden py-4`}
+      className={`${unbounded.className} bg-[#77C400] text-white uppercase font-bold text-3xl sticky bottom-0 overflow-hidden py-4 z-50`}
     >
       <div className="marquee__inner flex gap-8" aria-hidden="true">
         <div className="marquee__part">Bullet & Brains is Out</div>

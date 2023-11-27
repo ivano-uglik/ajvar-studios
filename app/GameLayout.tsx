@@ -51,7 +51,7 @@ export default function GameLayout({ className }: { className?: string }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center gap-24 md:gap-0 pb-16 content-container mx-auto">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-0 pb-16 content-container mx-auto">
         <div className="basis-1/2">
           <div>
             <Image
@@ -85,7 +85,7 @@ export default function GameLayout({ className }: { className?: string }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center gap-24 md:gap-16 py-16 content-container mx-auto">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-16 py-16 content-container mx-auto">
         <div className="basis-1/2">
           <Image
             src={goboGameLayout}
@@ -116,7 +116,7 @@ export default function GameLayout({ className }: { className?: string }) {
           <AppStores android="#" apple="#" />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center gap-24 md:gap-0 py-16 content-container mx-auto">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-0 py-16 content-container mx-auto">
         <div className="basis-1/2 lg:pt-16">
           <div>
             <Image
@@ -127,7 +127,7 @@ export default function GameLayout({ className }: { className?: string }) {
             />
           </div>
           <h2
-            className={`${unbounded.className} text-5xl lg:text-[4rem] font-black leading-relaxed`}
+            className={`${unbounded.className} text-3xl lg:text-5xl font-black leading-relaxed`}
           >
             Bullet & Brains
           </h2>
