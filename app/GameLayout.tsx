@@ -154,7 +154,7 @@ export default function GameLayout({ className }: { className?: string }) {
           <h2
             className={`${unbounded.className} text-5xl lg:text-[4rem] font-black leading-relaxed`}
           >
-            OctoCurse
+            Bullet & Brains
           </h2>
           <h3 className="pt-4 text-2xl lg:w-3/4">
             {
