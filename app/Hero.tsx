@@ -44,7 +44,7 @@ export default function Hero({ className }: { className?: string }) {
             Who we work with
           </h3>
           <div className="flex gap-4">
-            <button className="rounded-full p-2 lg:p-4 bg-gray-200 flex justify-center items-center transition-all duration-200 cursor-default">
+            <button className="rounded-full p-2 lg:p-4 bg-gray-200 flex justify-center items-center transition-all duration-100 cursor-default">
               <FaChevronLeft color="#E41943" size={20} />
             </button>
             <button className="rounded-full p-2 lg:p-4 bg-white flex justify-center items-center">
@@ -56,7 +56,7 @@ export default function Hero({ className }: { className?: string }) {
           {images.map((img: any, index: any) => (
             <button
               key={index}
-              className="px-5 py-4 lg:px-10 lg:py-8 bg-white rounded-lg lg:rounded-[2rem] drop-shadow-2xl hover:scale-110 transition-all duration-200 ease-in-out"
+              className="px-5 py-4 lg:px-10 lg:py-8 bg-white rounded-lg lg:rounded-[2rem] drop-shadow-2xl hover:scale-110 transition-all duration-100 ease-in-out"
             >
               <Image
                 src={img.img}

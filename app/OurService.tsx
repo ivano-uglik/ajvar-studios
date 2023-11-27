@@ -3,9 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import goboLogo from "@/public/gobologo.svg";
 import goboContent from "@/public/gobo-content.svg";
-import apple from "@/public/apple.svg";
-import android from "@/public/android.svg";
-
+import AppStores from "./components/AppStores";
 const unbounded = Unbounded({ subsets: ["latin"] });
 
 export default function OurService({ className }: { className?: string }) {
@@ -56,19 +54,21 @@ export default function OurService({ className }: { className?: string }) {
         <div className="flex flex-col lg:flex-row items-center lg:justify-around flex-wrap gap-8 pt-24">
           {games.map((game, index) => (
             <div key={index} className="w-[20rem]">
-              <div className="relative w-full">
-                <Image
-                  src={game.content}
-                  alt={game.name}
-                  className="mb-12 w-full"
-                  unoptimized
-                />
-                <Image
-                  src={game.logo}
-                  alt={`${game.name} logo`}
-                  className="border-8 border-white rounded-xl absolute -bottom-8 left-8"
-                  unoptimized
-                />
+              <div className="relative w-full hover:scale-110 transition-all duration-100">
+                <Link href="#">
+                  <Image
+                    src={game.content}
+                    alt={game.name}
+                    className="mb-12 w-full"
+                    unoptimized
+                  />
+                  <Image
+                    src={game.logo}
+                    alt={`${game.name} logo`}
+                    className="border-8 border-white rounded-xl absolute -bottom-8 left-8"
+                    unoptimized
+                  />
+                </Link>
               </div>
               <div>
                 <h2
@@ -78,28 +78,10 @@ export default function OurService({ className }: { className?: string }) {
                 </h2>
                 <p className="pt-4 text-xl">{game.description}</p>
               </div>
-              <div className="flex gap-8 py-8">
-                <Link
-                  href={game.appStoreLink}
-                  className="p-4 rounded-full aspect-square shadow-lg bg-white"
-                >
-                  <Image
-                    src={apple}
-                    alt={`Go to ${game.name} App store`}
-                    unoptimized
-                  />
-                </Link>
-                <Link
-                  href={game.playStoreLink}
-                  className="p-4 rounded-full aspect-square shadow-lg bg-white"
-                >
-                  <Image
-                    src={android}
-                    alt={`Go to ${game.name} Google Play store`}
-                    unoptimized
-                  />
-                </Link>
-              </div>
+              <AppStores
+                android={game.playStoreLink}
+                apple={game.appStoreLink}
+              />
             </div>
           ))}
         </div>

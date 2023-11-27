@@ -2,17 +2,15 @@ import { Unbounded } from "next/font/google";
 const unbounded = Unbounded({ subsets: ["latin"] });
 
 import Image from "next/image";
-import Link from "next/link";
 
-import octocurseGameLayout from "@/public/octocurse-gamelayout.png";
+import octocurseGameLayout from "@/public/octocurse-content.svg";
 import octocurseLogo from "@/public/octocurse-logo.svg";
 import goboGameLayout from "@/public/gobo-gamelayout.png";
 import goboLogo from "@/public/gobologo.svg";
 import bulletbrainsGameLayout from "@/public/bulletbrainsgamelayout.png";
 import bulletbrainsLogo from "@/public/bulletbrainslogo.svg";
-
-import apple from "@/public/apple.svg";
-import android from "@/public/android.svg";
+import octo from "@/public/octocurse-octo.svg";
+import AppStores from "./components/AppStores";
 
 export default function GameLayout({ className }: { className?: string }) {
   return (
@@ -73,28 +71,18 @@ export default function GameLayout({ className }: { className?: string }) {
               "Take your champ from zero to hero in this competitive game where training is just the beginning! Step up to the challenge and play now!"
             }
           </h3>
-          <div className="flex gap-8 py-8">
-            <Link
-              href="#"
-              className="p-4 rounded-full aspect-square shadow-lg bg-white"
-            >
-              <Image src={apple} alt="Go to App store" unoptimized />
-            </Link>
-            <Link
-              href="#"
-              className="p-4 rounded-full aspect-square shadow-lg bg-white"
-            >
-              <Image src={android} alt="Go to Google Play store" unoptimized />
-            </Link>
-          </div>
+          <AppStores android="#" apple="#" />
         </div>
-        <div className="basis-1/2">
+        <div className="basis-1/2 relative">
           <Image
             src={octocurseGameLayout}
             className="w-full rounded-t-3xl rounded-b-3xl"
             alt="Tablet screen displaying Gimme App"
             unoptimized
           />
+          <div className="absolute bottom-0 top-1/4 -left-[15%] ">
+            <Image src={octo} alt="" className="" unoptimized />
+          </div>
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-center gap-24 md:gap-16 py-16 content-container mx-auto">
@@ -125,20 +113,7 @@ export default function GameLayout({ className }: { className?: string }) {
               "Take your champ from zero to hero in this competitive game where training is just the beginning! Step up to the challenge and play now!"
             }
           </h3>
-          <div className="flex gap-8 py-8">
-            <Link
-              href="#"
-              className="p-4 rounded-full aspect-square shadow-lg bg-white"
-            >
-              <Image src={apple} alt="Go to App store" unoptimized />
-            </Link>
-            <Link
-              href="#"
-              className="p-4 rounded-full aspect-square shadow-lg bg-white"
-            >
-              <Image src={android} alt="Go to Google Play store" unoptimized />
-            </Link>
-          </div>
+          <AppStores android="#" apple="#" />
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-center gap-24 md:gap-0 py-16 content-container mx-auto">
@@ -161,20 +136,7 @@ export default function GameLayout({ className }: { className?: string }) {
               "Take your champ from zero to hero in this competitive game where training is just the beginning! Step up to the challenge and play now!"
             }
           </h3>
-          <div className="flex gap-8 py-8">
-            <Link
-              href="#"
-              className="p-4 rounded-full aspect-square shadow-lg bg-white"
-            >
-              <Image src={apple} alt="Go to App store" unoptimized />
-            </Link>
-            <Link
-              href="#"
-              className="p-4 rounded-full aspect-square shadow-lg bg-white"
-            >
-              <Image src={android} alt="Go to Google Play store" unoptimized />
-            </Link>
-          </div>
+          <AppStores android="#" apple="#" />
         </div>
         <div className="basis-1/2">
           <Image

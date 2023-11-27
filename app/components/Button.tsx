@@ -18,7 +18,7 @@ export default function Button({
 }) {
   return (
     <button
-      className={`${unbounded.className} ${textColor} ${bg} font-bold rounded-full ${px} ${py} text-xs lg:text-base transition-all duration-300 ease-in-out ${className}`}
+      className={`${unbounded.className} ${textColor} ${bg} font-bold rounded-full ${px} ${py} text-xs lg:text-base hover:scale-125 transition-all duration-300 ease-in-out ${className}`}
     >
       {text}
     </button>
