@@ -11,7 +11,7 @@ export default function News({ className }: { className?: string }) {
   return (
     <section className="bg-[#FFFBF2] pt-64 lg:pt-[50rem]">
       <div
-        className={`relative bg-ajvar w-full rounded-3xl lg:rounded-t-[5rem] pb-16 ${className}`}
+        className={`relative bg-ajvar w-full rounded-t-3xl lg:rounded-t-[5rem] pb-16 ${className}`}
       >
         <Image
           src={octo}
