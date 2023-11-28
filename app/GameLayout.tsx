@@ -58,7 +58,6 @@ export default function GameLayout({ className }: { className?: string }) {
               src={octocurseLogo}
               alt="Octo Curse logo"
               className="rounded-xl"
-              unoptimized
             />
           </div>
           <h2
@@ -78,10 +77,9 @@ export default function GameLayout({ className }: { className?: string }) {
             src={octocurseGameLayout}
             className="w-full rounded-t-3xl rounded-b-3xl"
             alt="Tablet screen displaying Gimme App"
-            unoptimized
           />
           <div className="absolute bottom-0 top-1/4 -left-[15%] ">
-            <Image src={octo} alt="" className="" unoptimized />
+            <Image src={octo} alt="" />
           </div>
         </div>
       </div>
@@ -90,18 +88,13 @@ export default function GameLayout({ className }: { className?: string }) {
           <Image
             src={goboGameLayout}
             className="w-full rounded-t-3xl rounded-b-3xl"
+            placeholder="blur"
             alt="Tablet screen displaying Gimme App"
-            unoptimized
           />
         </div>
         <div className="basis-1/2 lg:pt-16">
           <div>
-            <Image
-              src={goboLogo}
-              alt="GoBo logo"
-              className="rounded-xl"
-              unoptimized
-            />
+            <Image src={goboLogo} alt="GoBo logo" className="rounded-xl" />
           </div>
           <h2
             className={`${unbounded.className} text-[4rem] font-black leading-relaxed text-gobo`}
@@ -123,7 +116,6 @@ export default function GameLayout({ className }: { className?: string }) {
               src={bulletbrainsLogo}
               alt="Bullet & Brains logo"
               className="rounded-xl"
-              unoptimized
             />
           </div>
           <h2
@@ -143,7 +135,6 @@ export default function GameLayout({ className }: { className?: string }) {
             src={bulletbrainsGameLayout}
             className="w-full rounded-t-3xl rounded-b-3xl"
             alt="Tablet screen displaying Gimme App"
-            unoptimized
           />
         </div>
       </div>

@@ -6,12 +6,14 @@ import androidLogo from "@/public/android.svg";
 export default function AppStores({
   android,
   apple,
+  className,
 }: {
   android: string;
   apple: string;
+  className?: string;
 }) {
   return (
-    <div className="flex gap-8 py-8">
+    <div className={`flex gap-8 py-8 ${className}`}>
       <Link
         href={apple}
         className="p-4 rounded-full aspect-square shadow-lg bg-white hover:scale-125 hover:opacity-75 transition-all duration-100"

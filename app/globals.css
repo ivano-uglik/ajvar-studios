@@ -59,11 +59,10 @@
 }
 
 .bg-video {
-  background: url("../public/video-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background: url("../public/video-background.png"); */
+  object-fit: cover;
   border-radius: 1.5rem;
-  background-position: center;
+  object-position: center;
 }
 
 .spin {
@@ -87,4 +86,22 @@
   box-shadow: 10px 10px 42px 2px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 10px 10px 42px 2px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 10px 10px 42px 2px rgba(0, 0, 0, 0.5);
+}
+
+.bg-octo-showcase {
+  background: url("../public/octo-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-green {
+  /* #2D7D00 */
+  background: rgb(45, 125, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(45, 125, 0, 0) 0%,
+    rgba(45, 125, 0, 1) 75%,
+    rgba(45, 125, 0, 1) 100%
+  );
 }

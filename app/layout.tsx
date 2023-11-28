@@ -20,7 +20,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar className="px-4 lg:px-0" />
         {children}
         <CopyrightNotice className="px-4 lg:px-0" />
       </body>
