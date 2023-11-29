@@ -47,10 +47,13 @@ export default function Navbar({ className }: { className?: string }) {
         </Link>
         <ul className="hidden lg:flex gap-12 items-center">
           <li className="bg-ajvar rounded-full px-5 py-2 text-white">
-            <Link href="#">Start</Link>
+            <Link href="/">Start</Link>
           </li>
           <li>
             <Link href="#">Our Games</Link>
+          </li>
+          <li>
+            <Link href="/games/octocurse">OctoCurse</Link>
           </li>
           <li>
             <Link href="#">Our Story</Link>
