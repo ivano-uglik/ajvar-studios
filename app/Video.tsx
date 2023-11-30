@@ -34,13 +34,14 @@ export default function Video({ className }: { className?: string }) {
         ) : (
           <div className="h-[30vh] lg:h-[55vh] mx-auto">
             <iframe
-              src="https://player.vimeo.com/video/676247342?h=f0b527f0f2&autoplay=1&title=0&byline=0&portrait=0"
-              style={{
-                width: "100%",
-                height: "100%",
-              }}
-              allow="autoplay; fullscreen; picture-in-picture"
-            />
+              width="100%"
+              height="100%"
+              src="https://www.youtube-nocookie.com/embed/5dnPigDRtWk?si=YqpCWSF2FjA2UNir"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         )}
       </div>
