@@ -1,5 +1,5 @@
 import { Unbounded } from "next/font/google";
-import Button from "./components/Button";
+import Button from "../components/Button";
 import Image from "next/image";
 import nanobit from "@/public/nanobit.svg";
 const unbounded = Unbounded({ subsets: ["latin"] });

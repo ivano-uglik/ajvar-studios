@@ -3,8 +3,16 @@
 import Image from "next/image";
 import { useState } from "react";
 import { FaPlay } from "react-icons/fa";
-import video from "@/public/video-background.png";
-export default function Video({ className }: { className?: string }) {
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+export default function Video({
+  className,
+  video,
+  iframe,
+}: {
+  className?: string;
+  video: string | StaticImport;
+  iframe: any;
+}) {
   const [active, setActive] = useState(false);
   return (
     <section className={`content-container mx-auto pt-8 pb-16 ${className}`}>
@@ -27,22 +35,12 @@ export default function Video({ className }: { className?: string }) {
                   setActive(true);
                 }}
               >
-                <FaPlay size={"5vw"} />
+                <FaPlay size={"5vw"} color="#000000" />
               </button>
             </div>
           </div>
         ) : (
-          <div className="h-[30vh] lg:h-[55vh] mx-auto">
-            <iframe
-              width="100%"
-              height="100%"
-              src="https://www.youtube-nocookie.com/embed/5dnPigDRtWk?si=YqpCWSF2FjA2UNir"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
+          <div className="h-[30vh] lg:h-[55vh] mx-auto">{iframe}</div>
         )}
       </div>
     </section>

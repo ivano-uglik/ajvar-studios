@@ -10,7 +10,7 @@ import goboLogo from "@/public/gobologo.svg";
 import bulletbrainsGameLayout from "@/public/bulletbrainsgamelayout.png";
 import bulletbrainsLogo from "@/public/bulletbrainslogo.svg";
 import octo from "@/public/octocurse-octo.svg";
-import AppStores from "./components/AppStores";
+import AppStores from "../components/AppStores";
 
 export default function GameLayout({ className }: { className?: string }) {
   return (

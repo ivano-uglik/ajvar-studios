@@ -5,24 +5,24 @@ import { Unbounded } from "next/font/google";
 const unbounded = Unbounded({ subsets: ["latin"] });
 
 import goboContent from "@/public/gobo-content.svg";
-import Button from "./components/Button";
+import Button from "../components/Button";
 
 export default function News({ className }: { className?: string }) {
   return (
-    <section className="bg-[#FFFBF2] pt-64 lg:pt-[50rem]">
+    <section className="pt-[25vh] lg:pt-[75vh]">
       <div
         className={`relative bg-ajvar w-full rounded-t-3xl lg:rounded-t-[5rem] pb-16 ${className}`}
       >
         <Image
           src={octo}
-          className="absolute top-[-17%] lg:top-[-70%] left-[47%] transform-translate-1/2 -translate-x-1/2 w-48 h-48 lg:w-[32rem] lg:h-[32rem] z-30"
+          className="absolute top-[-30vw] left-[47%] transform-translate-1/2 -translate-x-1/2 w-[30vw] h-[30vw] z-30"
           alt=""
           unoptimized
         />
-        <div className="absolute top-[-5%] lg:top-[-25%] left-1/4 transform-translate-1/4 -translate-x-1/4 w-48 h-48 lg:w-[32rem] lg:h-[32rem] rounded-full bg-ajvar"></div>
-        <div className="absolute top-[-10%] lg:top-[-40%] left-1/2 transform-translate-2/4 -translate-x-2/4 w-48 h-48 lg:w-[32rem] lg:h-[32rem] rounded-full bg-ajvar"></div>
-        <div className="absolute top-[-5%] lg:top-[-25%] left-3/4 transform-translate-3/4 -translate-x-3/4 w-48 h-48 lg:w-[32rem] lg:h-[32rem] rounded-full bg-ajvar"></div>
-        <div className="content-container mx-auto pt-64 text-white z-40">
+        <div className="absolute top-[-8vw] -z-10 left-1/4 transform-translate-1/4 -translate-x-1/4 w-[30vw] h-[30vw] rounded-full bg-ajvar"></div>
+        <div className="absolute top-[-20vw] -z-10 left-1/2 transform-translate-2/4 -translate-x-2/4 w-[30vw] h-[30vw] rounded-full bg-ajvar"></div>
+        <div className="absolute top-[-8vw] -z-10 left-3/4 transform-translate-3/4 -translate-x-3/4 w-[30vw] h-[30vw] rounded-full bg-ajvar"></div>
+        <div className="content-container mx-auto pt-16 lg:pt-32 text-white z-40">
           <div className="text-center">
             <h1
               className={`${unbounded.className} font-black text-5xl uppercase`}

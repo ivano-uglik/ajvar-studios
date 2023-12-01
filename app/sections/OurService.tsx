@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import goboLogo from "@/public/gobologo.svg";
 import goboContent from "@/public/gobo-content.svg";
-import AppStores from "./components/AppStores";
+import AppStores from "../components/AppStores";
 const unbounded = Unbounded({ subsets: ["latin"] });
 
 export default function OurService({ className }: { className?: string }) {

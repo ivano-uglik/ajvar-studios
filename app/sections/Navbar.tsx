@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Unbounded } from "next/font/google";
-import Button from "./components/Button";
+import Button from "../components/Button";
 import ajvar from "@/public/ajvar-logo.svg";
 import Image from "next/image";
 import Link from "next/link";
