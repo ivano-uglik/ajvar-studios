@@ -40,7 +40,7 @@ export default function MoreGames({ className }: { className?: string }) {
             <h1
               className={`${unbounded.className} font-black text-5xl uppercase`}
             >
-              Latest News
+              More Games
             </h1>
             <p className="text-xl lg:w-1/2 mx-auto pt-4">
               Games we did for others. Find your new favorite with these
