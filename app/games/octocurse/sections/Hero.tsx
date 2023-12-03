@@ -1,5 +1,5 @@
 import Image from "next/image";
-import octo from "@/public/octocurse-octo.svg";
+import octoCurseHeader from "@/public/octocurse-assets/octo-header.webp";
 import AppStores from "@/app/components/AppStores";
 
 import { Unbounded } from "next/font/google";
@@ -9,7 +9,11 @@ export default function Hero() {
   return (
     <div className="bg-octo-showcase text-white">
       <div className="bg-green">
-        <Image src={octo} alt="" className="mx-auto py-24 w-[50rem]" />
+        <Image
+          src={octoCurseHeader}
+          alt=""
+          className="mx-auto py-24 w-[50rem]"
+        />
         <div className="text-center mx-auto content-container py-24 px-4 lg:px-0">
           <h1
             className={`${unbounded.className} font-black text-3xl lg:text-5xl uppercase leading-[1.5] overflow-x-clip`}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import appleLogo from "@/public/apple.svg";
-import androidLogo from "@/public/android.svg";
+import appleLogo from "@/public/svg-assets/apple.svg";
+import androidLogo from "@/public/svg-assets/android.svg";
 
 export default function AppStores({
   android,

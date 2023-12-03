@@ -1,10 +1,10 @@
-import octo from "@/public/octo.svg";
+import octoCharacter from "@/public/octocurse-assets/octo-character.svg";
 import Image from "next/image";
 
 import { Unbounded } from "next/font/google";
 const unbounded = Unbounded({ subsets: ["latin"] });
 
-import goboContent from "@/public/gobo-content.svg";
+import goboContent from "@/public/gobo-assets/gobo-content-1.webp";
 import Button from "../components/Button";
 
 export default function News({ className }: { className?: string }) {
@@ -14,7 +14,7 @@ export default function News({ className }: { className?: string }) {
         className={`relative bg-ajvar w-full rounded-t-3xl lg:rounded-t-[5rem] pb-16 ${className}`}
       >
         <Image
-          src={octo}
+          src={octoCharacter}
           className="absolute top-[-30vw] left-[47%] transform-translate-1/2 -translate-x-1/2 w-[30vw] h-[30vw] z-30"
           alt=""
           unoptimized

@@ -3,13 +3,12 @@ const unbounded = Unbounded({ subsets: ["latin"] });
 
 import Image from "next/image";
 
-import octocurseGameLayout from "@/public/octocurse-content.svg";
-import octocurseLogo from "@/public/octocurse-logo.svg";
-import goboGameLayout from "@/public/gobo-gamelayout.png";
-import goboLogo from "@/public/gobologo.svg";
-import bulletbrainsGameLayout from "@/public/bulletbrainsgamelayout.png";
-import bulletbrainsLogo from "@/public/bulletbrainslogo.svg";
-import octo from "@/public/octocurse-octo.svg";
+import octoCurseMain from "@/public/octocurse-assets/octo-main.webp";
+import octoCurseIcon from "@/public/octocurse-assets/octo-icon.webp";
+import goboMain from "@/public/gobo-assets/gobo-main.webp";
+import goboIcon from "@/public/gobo-assets/gobo-icon.webp";
+import bulletBrainsMain from "@/public/bulletbrains-assets/bb-main.webp";
+import bulletBrainsIcon from "@/public/bulletbrains-assets/bb-icon.webp";
 import AppStores from "../components/AppStores";
 
 export default function GameLayout({ className }: { className?: string }) {
@@ -51,71 +50,13 @@ export default function GameLayout({ className }: { className?: string }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-0 pb-16 content-container mx-auto">
-        <div className="basis-1/2">
-          <div>
-            <Image
-              src={octocurseLogo}
-              alt="Octo Curse logo"
-              className="rounded-xl"
-            />
-          </div>
-          <h2
-            className={`${unbounded.className} text-5xl lg:text-[4rem] font-black leading-relaxed text-octocurse`}
-          >
-            OctoCurse
-          </h2>
-          <h3 className="pt-4 text-2xl lg:w-3/4">
-            {
-              "Take your champ from zero to hero in this competitive game where training is just the beginning! Step up to the challenge and play now!"
-            }
-          </h3>
-          <AppStores android="#" apple="#" />
-        </div>
-        <div className="basis-1/2 relative">
-          <Image
-            src={octocurseGameLayout}
-            className="w-full rounded-t-3xl rounded-b-3xl"
-            alt="Tablet screen displaying Gimme App"
-          />
-          <div className="absolute bottom-0 top-1/4 -left-[15%] ">
-            <Image src={octo} alt="" />
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-16 py-16 content-container mx-auto">
-        <div className="basis-1/2">
-          <Image
-            src={goboGameLayout}
-            className="w-full rounded-t-3xl rounded-b-3xl"
-            placeholder="blur"
-            alt="Tablet screen displaying Gimme App"
-          />
-        </div>
-        <div className="basis-1/2 lg:pt-16">
-          <div>
-            <Image src={goboLogo} alt="GoBo logo" className="rounded-xl" />
-          </div>
-          <h2
-            className={`${unbounded.className} text-[4rem] font-black leading-relaxed text-gobo`}
-          >
-            GoBo
-          </h2>
-          <h3 className="pt-4 text-2xl lg:w-3/4">
-            {
-              "Take your champ from zero to hero in this competitive game where training is just the beginning! Step up to the challenge and play now!"
-            }
-          </h3>
-          <AppStores android="#" apple="#" />
-        </div>
-      </div>
       <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-0 py-16 content-container mx-auto">
         <div className="basis-1/2 lg:pt-16">
           <div>
             <Image
-              src={bulletbrainsLogo}
+              src={bulletBrainsIcon}
               alt="Bullet & Brains logo"
-              className="rounded-xl"
+              className="w-32 rounded-xl"
             />
           </div>
           <h2
@@ -132,10 +73,64 @@ export default function GameLayout({ className }: { className?: string }) {
         </div>
         <div className="basis-1/2">
           <Image
-            src={bulletbrainsGameLayout}
+            src={bulletBrainsMain}
             className="w-full rounded-t-3xl rounded-b-3xl"
-            alt="Tablet screen displaying Gimme App"
+            alt="Bullet & Brains Game Layout"
           />
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-0 pb-16 content-container mx-auto">
+        <div className="basis-1/2">
+          <div>
+            <Image
+              src={octoCurseIcon}
+              alt="Octo Curse logo"
+              className="w-32 rounded-xl"
+            />
+          </div>
+          <h2
+            className={`${unbounded.className} text-5xl lg:text-[4rem] font-black leading-relaxed text-octocurse`}
+          >
+            OctoCurse
+          </h2>
+          <h3 className="pt-4 text-2xl lg:w-3/4">
+            {
+              "Take your champ from zero to hero in this competitive game where training is just the beginning! Step up to the challenge and play now!"
+            }
+          </h3>
+          <AppStores android="#" apple="#" />
+        </div>
+        <div className="basis-1/2">
+          <Image
+            src={octoCurseMain}
+            className="w-full rounded-t-3xl rounded-b-3xl"
+            alt="OctoCurse Game Layout"
+          />
+        </div>
+      </div>
+      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-16 py-16 content-container mx-auto">
+        <div className="basis-1/2">
+          <Image
+            src={goboMain}
+            className="w-full rounded-t-3xl rounded-b-3xl"
+            alt="GoBo Game Layout"
+          />
+        </div>
+        <div className="basis-1/2 lg:pt-16">
+          <div>
+            <Image src={goboIcon} alt="GoBo logo" className="w-32 rounded-xl" />
+          </div>
+          <h2
+            className={`${unbounded.className} text-[4rem] font-black leading-relaxed text-gobo`}
+          >
+            GoBo
+          </h2>
+          <h3 className="pt-4 text-2xl lg:w-3/4">
+            {
+              "Take your champ from zero to hero in this competitive game where training is just the beginning! Step up to the challenge and play now!"
+            }
+          </h3>
+          <AppStores android="#" apple="#" />
         </div>
       </div>
     </section>

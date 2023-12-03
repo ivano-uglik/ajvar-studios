@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import grid1 from "@/public/octocurse-grid-1.png";
-import grid2 from "@/public/octocurse-grid-2.png";
-import grid3 from "@/public/octocurse-grid-3.png";
-import grid4 from "@/public/octocurse-grid-4.png";
+import grid1 from "@/public/octocurse-assets/octo-grid-1.png";
+import grid2 from "@/public/octocurse-assets/octo-grid-2.png";
+import grid3 from "@/public/octocurse-assets/octo-grid-3.png";
+import grid4 from "@/public/octocurse-assets/octo-grid-4.png";
 
 export default function Grid() {
   return (

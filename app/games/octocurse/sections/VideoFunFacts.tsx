@@ -1,11 +1,11 @@
 import Video from "@/app/sections/Video";
 import { FaStar } from "react-icons/fa";
-import character from "@/public/octo-character.svg";
+import octoVideo from "@/public/octocurse-assets/octo-video.png";
 import Image from "next/image";
 import { Unbounded } from "next/font/google";
 const unbounded = Unbounded({ subsets: ["latin"] });
 
-import video from "@/public/video-background.png";
+import octoCharacter from "@/public/octocurse-assets/octo-character.svg";
 export default function VideoFunFacts() {
   const iframe = (
     <iframe
@@ -22,7 +22,7 @@ export default function VideoFunFacts() {
   return (
     <div className="bg-[#2D7D00]">
       <div className="py-8 lg:py-16 bg-[#C0F504] rounded-t-[3rem] lg:rounded-t-[5rem] px-4 lg:px-0">
-        <Video video={video} iframe={iframe} />
+        <Video video={octoVideo} iframe={iframe} />
         <div className="content-container mx-auto">
           <h3
             className={`${unbounded.className} font-black text-3xl text-center uppercase`}
@@ -83,7 +83,7 @@ export default function VideoFunFacts() {
               </div>
             </div>
             <div className="basis-1/2 w-64">
-              <Image src={character} alt="" unoptimized />
+              <Image src={octoCharacter} alt="" />
             </div>
           </div>
         </div>

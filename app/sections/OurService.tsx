@@ -1,8 +1,8 @@
 import { Unbounded } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
-import goboLogo from "@/public/gobologo.svg";
-import goboContent from "@/public/gobo-content.svg";
+import goboIcon from "@/public/gobo-assets/gobo-icon.webp";
+import goboContent from "@/public/gobo-assets/gobo-content-1.webp";
 import AppStores from "../components/AppStores";
 const unbounded = Unbounded({ subsets: ["latin"] });
 
@@ -12,7 +12,7 @@ export default function OurService({ className }: { className?: string }) {
       name: "GoBo",
       description:
         "Take your champ from zero to hero in this competitive game where training is just the beginning! Step up to the challenge and play now!",
-      logo: goboLogo,
+      logo: goboIcon,
       content: goboContent,
       appStoreLink: "#",
       playStoreLink: "#",
@@ -21,7 +21,7 @@ export default function OurService({ className }: { className?: string }) {
       name: "GoBo",
       description:
         "Take your champ from zero to hero in this competitive game where training is just the beginning! Step up to the challenge and play now!",
-      logo: goboLogo,
+      logo: goboIcon,
       content: goboContent,
       appStoreLink: "#",
       playStoreLink: "#",
@@ -30,7 +30,7 @@ export default function OurService({ className }: { className?: string }) {
       name: "GoBo",
       description:
         "Take your champ from zero to hero in this competitive game where training is just the beginning! Step up to the challenge and play now!",
-      logo: goboLogo,
+      logo: goboIcon,
       content: goboContent,
       appStoreLink: "#",
       playStoreLink: "#",
@@ -59,13 +59,13 @@ export default function OurService({ className }: { className?: string }) {
                   <Image
                     src={game.content}
                     alt={game.name}
-                    className="mb-12 w-full"
+                    className="rounded-[3rem] mb-12 w-full h-72 object-cover"
                     unoptimized
                   />
                   <Image
                     src={game.logo}
                     alt={`${game.name} logo`}
-                    className="border-8 border-white rounded-xl absolute -bottom-8 left-8"
+                    className="w-32 absolute -bottom-8 left-8"
                     unoptimized
                   />
                 </Link>

@@ -1,5 +1,8 @@
+"use client";
+
 import { Unbounded } from "next/font/google";
 import Button from "../components/Button";
+// import Liquid from "./Liquid";
 const unbounded = Unbounded({ subsets: ["latin"] });
 
 export default function ContactUs() {
@@ -47,6 +50,7 @@ export default function ContactUs() {
           />
         </div>
       </div>
+      {/* <Liquid /> */}
     </div>
   );
 }

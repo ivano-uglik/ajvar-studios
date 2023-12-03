@@ -89,7 +89,7 @@
 }
 
 .bg-octo-showcase {
-  background: url("../public/octo-bg.svg");
+  background: url("../public/octocurse-assets/octo-bg-header.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -104,4 +104,8 @@
     rgba(45, 125, 0, 1) 75%,
     rgba(45, 125, 0, 1) 100%
   );
+}
+
+.canvasCSS {
+  margin-left: -40px;
 }

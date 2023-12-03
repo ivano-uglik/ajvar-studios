@@ -1,7 +1,7 @@
 import { Unbounded } from "next/font/google";
 import Button from "../components/Button";
 import Image from "next/image";
-import nanobit from "@/public/nanobit.svg";
+import nanobit from "@/public/ajvar/nanobit.svg";
 const unbounded = Unbounded({ subsets: ["latin"] });
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
@@ -20,7 +20,7 @@ export default function Hero({ className }: { className?: string }) {
     >
       <div className="text-center">
         <h1
-          className={`${unbounded.className} text-2xl lg:text-[3.5rem] lg:leading-[4.2rem] uppercase font-black lg:w-3/4 mx-auto`}
+          className={`${unbounded.className} text-2xl lg:text-[3.5rem] lg:leading-[4.2rem] uppercase font-black lg:w-3/4 mx-auto content-container`}
         >
           At Ajvar, Our Dream is to Create Games that Bring Smiles.
         </h1>

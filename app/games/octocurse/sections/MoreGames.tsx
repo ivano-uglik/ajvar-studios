@@ -1,13 +1,11 @@
-import octo from "@/public/octo.svg";
 import Image from "next/image";
 
 import { Unbounded } from "next/font/google";
 const unbounded = Unbounded({ subsets: ["latin"] });
 
-import goboContent from "@/public/gobo-content.svg";
 import Button from "@/app/components/Button";
-import bulletBrains from "@/public/bullet-brains.svg";
-import bulletBrainsBackground from "@/public/bulletBrainsBackground.png";
+import bulletBrainsText from "@/public/bulletbrains-assets/bb-text.webp";
+import bulletBrainsBackground from "@/public/bulletbrains-assets/bb-bg-1.webp";
 import Video from "@/app/sections/Video";
 export default function MoreGames({ className }: { className?: string }) {
   const iframe = (
@@ -27,8 +25,8 @@ export default function MoreGames({ className }: { className?: string }) {
         className={`relative bg-[#7BBBC4] w-full rounded-t-3xl lg:rounded-t-[5rem] pb-16 ${className}`}
       >
         <Image
-          src={bulletBrains}
-          className="absolute top-[-25vw] left-[50%] transform-translate-1/2 -translate-x-1/2 w-[35vw] h-[35vw] z-30"
+          src={bulletBrainsText}
+          className="absolute top-[-15vw] left-[50%] transform-translate-1/2 -translate-x-1/2 w-[35vw] z-30"
           alt=""
           unoptimized
         />
