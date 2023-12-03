@@ -9,7 +9,17 @@ import Link from "next/link";
 
 const unbounded = Unbounded({ subsets: ["latin"] });
 
-export default function Navbar({ className }: { className?: string }) {
+export default function Navbar({
+  className,
+  prev = [{ label: "Back to Homepage", path: "/" }],
+  active,
+  navItems,
+}: {
+  className?: string;
+  prev?: { label: string; path: string }[] | null;
+  active?: { label: string; path: string }[];
+  navItems?: { label: string; path: string }[];
+}) {
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -45,37 +55,43 @@ export default function Navbar({ className }: { className?: string }) {
             />
           </div>
         </Link>
-        <ul className="hidden lg:flex gap-12 items-center">
-          <li className="bg-ajvar rounded-full px-5 py-2 text-white">
-            <Link href="/">Start</Link>
-          </li>
-          <li>
-            <Link href="#">Our Games</Link>
-          </li>
-          <li>
-            <Link href="/games/octocurse">OctoCurse</Link>
-          </li>
-          <li>
-            <Link href="#">Our Story</Link>
-          </li>
-          <li>
-            <Link href="#">FAQ</Link>
-          </li>
-          <li>
-            <Link href="#">Blog</Link>
-          </li>
+        <ul className="hidden lg:flex gap-[3vw] items-center">
+          {prev?.map((item: { label: string; path: string }, index: number) => (
+            <li key={index}>
+              <Link href={item.path}>{item.label}</Link>
+            </li>
+          ))}
+          {active?.map(
+            (item: { label: string; path: string }, index: number) => (
+              <li
+                key={index}
+                className="bg-ajvar rounded-full px-5 py-2 text-white"
+              >
+                <Link href={item.path}>{item.label}</Link>
+              </li>
+            )
+          )}
+          {navItems?.map(
+            (item: { label: string; path: string }, index: number) => (
+              <li key={index}>
+                <Link href={item.path}>{item.label}</Link>
+              </li>
+            )
+          )}
         </ul>
         <div>
           {/* <Button text="Contact Us" /> */}
-          <button
-            className={`${
-              unbounded.className
-            } text-white bg-ajvar font-bold rounded-full ${
-              scrolling ? "px-16 py-2" : "px-4 py-3"
-            } text-xs lg:text-base transition-all duration-300 ease-in-out`}
-          >
-            Contact Us
-          </button>
+          <Link href="/contact-us">
+            <button
+              className={`${
+                unbounded.className
+              } text-white bg-ajvar font-bold rounded-full ${
+                scrolling ? "px-16 py-2" : "px-4 py-3"
+              } text-xs lg:text-base transition-all duration-300 ease-in-out`}
+            >
+              Contact Us
+            </button>
+          </Link>
         </div>
       </nav>
     </div>

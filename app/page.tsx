@@ -22,7 +22,18 @@ export default function Home() {
   );
   return (
     <>
-      <Navbar className="px-4 lg:px-0" />
+      <Navbar
+        className="px-4 lg:px-0"
+        prev={null}
+        active={[{ label: "Start", path: "/" }]}
+        navItems={[
+          { label: "OctoCurse", path: "/games/octocurse" },
+          { label: "GoBo", path: "/games/gobo" },
+          { label: "Bullet & Brains", path: "/games/bullet-brains" },
+          { label: "Our Story", path: "our-story" },
+          { label: "Blog", path: "/blog" },
+        ]}
+      />
       <Video
         className="px-4 lg:px-0"
         video={bulletBrainsBackground}
