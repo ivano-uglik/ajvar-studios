@@ -75,7 +75,14 @@ export default function GameLayout({ className }: { className?: string }) {
           />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-0 pb-16 content-container mx-auto">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-16 py-16 content-container mx-auto">
+        <div className="basis-1/2">
+          <Image
+            src={octoCurseMain}
+            className="w-full rounded-t-3xl rounded-b-3xl"
+            alt="OctoCurse Game Layout"
+          />
+        </div>
         <div className="basis-1/2">
           <div>
             <Image
@@ -98,13 +105,6 @@ export default function GameLayout({ className }: { className?: string }) {
             ps="https://store.playstation.com/en-us/product/UP1421-PPSA16192_00-0867477368441243"
             nintendo="https://www.nintendo.co.uk/Games/Nintendo-Switch-download-software/Octo-Curse-2395170.html"
             itch="https://ajvarstudio.itch.io/octo-curse"
-          />
-        </div>
-        <div className="basis-1/2">
-          <Image
-            src={octoCurseMain}
-            className="w-full rounded-t-3xl rounded-b-3xl"
-            alt="OctoCurse Game Layout"
           />
         </div>
       </div>
