@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <section>
-      <Navbar className="px-4 lg:px-0" />
+      <Navbar className="px-4 lg:px-0" active={[{ label: "Contact Us" }]} />
       {children}
     </section>
   );

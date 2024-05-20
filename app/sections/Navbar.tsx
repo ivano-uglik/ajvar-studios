@@ -11,13 +11,17 @@ const unbounded = Unbounded({ subsets: ["latin"] });
 
 export default function Navbar({
   className,
-  prev = [{ label: "Back to Homepage", path: "/" }],
   active,
-  navItems,
+  navItems = [
+    { label: "Start", path: "/" },
+    { label: "Bullets & Brains", path: "/games/bullet-brains" },
+    { label: "Octo Curse", path: "/games/octocurse" },
+    { label: "Zombie vs Towers", path: "/games/zombie-vs-towers" },
+    { label: "GoBo", path: "/games/gobo" },
+  ],
 }: {
   className?: string;
-  prev?: { label: string; path: string }[] | null;
-  active?: { label: string; path: string }[];
+  active: { label: string }[];
   navItems?: { label: string; path: string }[];
 }) {
   const [scrolling, setScrolling] = useState(false);
@@ -56,28 +60,26 @@ export default function Navbar({
           </div>
         </Link>
         <ul className="hidden lg:flex gap-[3vw] items-center">
-          {prev?.map((item: { label: string; path: string }, index: number) => (
-            <li key={index}>
+          {/* {active?.map((item: { label: string }, index: number) => (
+            <li
+              key={index}
+              className="bg-ajvar rounded-full px-5 py-2 text-white"
+            >
+              <Link href={item.path}>{item.label}</Link>
+            </li>
+          ))} */}
+          {navItems?.map((item, index) => (
+            <li
+              key={index}
+              className={`${
+                item.label === active[0].label
+                  ? "bg-ajvar rounded-full px-5 py-2 text-white"
+                  : ""
+              }`}
+            >
               <Link href={item.path}>{item.label}</Link>
             </li>
           ))}
-          {active?.map(
-            (item: { label: string; path: string }, index: number) => (
-              <li
-                key={index}
-                className="bg-ajvar rounded-full px-5 py-2 text-white"
-              >
-                <Link href={item.path}>{item.label}</Link>
-              </li>
-            )
-          )}
-          {navItems?.map(
-            (item: { label: string; path: string }, index: number) => (
-              <li key={index}>
-                <Link href={item.path}>{item.label}</Link>
-              </li>
-            )
-          )}
         </ul>
         <div>
           {/* <Button text="Contact Us" /> */}

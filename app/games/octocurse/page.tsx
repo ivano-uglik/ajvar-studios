@@ -11,13 +11,7 @@ export default function Octocurse() {
     <>
       <Navbar
         className="px-4 lg:px-0 sticky top-0 z-50"
-        prev={[{ label: "Back to Homepage", path: "/" }]}
-        active={[{ label: "OctoCurse", path: "/games/octocurse" }]}
-        navItems={[
-          { label: "Bullet & Brains", path: "/bullet-brains" },
-          { label: "GoBo", path: "/gobo" },
-          { label: "Blog", path: "/blog" },
-        ]}
+        active={[{ label: "Octo Curse" }]}
       />
       <div className="bg-octo-showcase">
         <Hero />

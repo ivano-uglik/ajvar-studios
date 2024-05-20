@@ -5,6 +5,9 @@ import Button from "../components/Button";
 import Image from "next/image";
 import ajvar from "@/public/ajvar/ajvar-logo.svg";
 import nanobit from "@/public/ajvar/nanobit.svg";
+import edenap from "@/public/who-we-work-with/logo_edenap.png";
+import fearem from "@/public/who-we-work-with/logo_feraem.png";
+import ironward from "@/public/who-we-work-with/logo_ironward.png";
 const unbounded = Unbounded({ subsets: ["latin"] });
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
@@ -15,16 +18,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 export default function Hero({ className }: { className?: string }) {
   const images: any = [
-    { img: nanobit, alt: "Nanobit" },
-    { img: ajvar, alt: "Ajvar" },
-    { img: nanobit, alt: "Nanobit" },
-    { img: ajvar, alt: "Ajvar" },
-    { img: nanobit, alt: "Nanobit" },
-    { img: ajvar, alt: "Ajvar" },
-    { img: nanobit, alt: "Nanobit" },
-    { img: ajvar, alt: "Ajvar" },
-    { img: nanobit, alt: "Nanobit" },
-    { img: ajvar, alt: "Ajvar" },
+    { img: edenap, alt: "Edenap" },
+    { img: fearem, alt: "Fearem" },
+    { img: ironward, alt: "Ironward" },
   ];
   return (
     <section>
@@ -76,7 +72,7 @@ export default function Hero({ className }: { className?: string }) {
                   <Image
                     src={img.img}
                     alt={img.alt}
-                    className="w-32 lg:w-64 h-8 lg:h-16"
+                    className="w-32 lg:w-64"
                     unoptimized
                   />
                 </button>
