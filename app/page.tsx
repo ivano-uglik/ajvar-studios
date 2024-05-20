@@ -32,7 +32,7 @@ export default function Home() {
       <GameLayout className="px-4 lg:px-0" />
       <OurService className="px-4 lg:px-0" />
       <News className="px-4 lg:px-0" />
-      <HorizontalScroll />
+      {/* <HorizontalScroll /> */}
     </>
   );
 }

@@ -30,6 +30,7 @@ export default function AppStores({
     <div className={`flex gap-8 py-8 ${className}`}>
       {apple && (
         <Link
+          target="_blank"
           href={apple}
           className="p-4 rounded-full aspect-square shadow-lg bg-white hover:scale-125 hover:opacity-75 transition-all duration-100"
         >
@@ -43,6 +44,7 @@ export default function AppStores({
       )}
       {android && (
         <Link
+          target="_blank"
           href={android}
           className="p-4 rounded-full aspect-square shadow-lg bg-white hover:scale-125 hover:opacity-75 transition-all duration-100"
         >
@@ -56,6 +58,7 @@ export default function AppStores({
       )}
       {steam && (
         <Link
+          target="_blank"
           href={steam}
           className="p-4 rounded-full aspect-square shadow-lg bg-white hover:scale-125 hover:opacity-75 transition-all duration-100"
         >
@@ -69,6 +72,7 @@ export default function AppStores({
       )}
       {ps && (
         <Link
+          target="_blank"
           href={ps}
           className="p-4 rounded-full aspect-square shadow-lg bg-white hover:scale-125 hover:opacity-75 transition-all duration-100"
         >
@@ -82,6 +86,7 @@ export default function AppStores({
       )}
       {nintendo && (
         <Link
+          target="_blank"
           href={nintendo}
           className="p-4 rounded-full aspect-square shadow-lg bg-white hover:scale-125 hover:opacity-75 transition-all duration-100"
         >
@@ -95,6 +100,7 @@ export default function AppStores({
       )}
       {behance && (
         <Link
+          target="_blank"
           href={behance}
           className="p-4 rounded-full aspect-square shadow-lg bg-white hover:scale-125 hover:opacity-75 transition-all duration-100"
         >
@@ -107,7 +113,11 @@ export default function AppStores({
         </Link>
       )}
       {itch && (
-        <Link href={itch} className="flex justify-center items-center w-48">
+        <Link
+          target="_blank"
+          href={itch}
+          className="flex justify-center items-center w-48"
+        >
           <Image
             src={itchLogo}
             alt="Go to itch.io"

@@ -55,7 +55,7 @@ export default function OurService({ className }: { className?: string }) {
           {games.map((game, index) => (
             <div key={index} className="w-[20rem]">
               <div className="relative w-full hover:scale-110 transition-all duration-100">
-                <Link href="#">
+                <Link href="#" target="_blank">
                   <Image
                     src={game.content}
                     alt={game.name}
