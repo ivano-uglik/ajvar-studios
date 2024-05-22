@@ -1,11 +1,11 @@
-import Hero from "./sections/Hero";
-import VideoFunFacts from "./sections/VideoFunFacts";
+import Hero from "./sections/OctoCurse/OctoCurseHero";
+import VideoFunFacts from "./sections/OctoCurse/OctoCurseVideoFunFacts";
 import Grid from "./sections/Grid";
-import WhatDidWeDo from "./sections/WhatDidWeDo";
-import FAQ from "./sections/FAQ";
-import MoreGames from "./sections/MoreGames";
+import WhatDidWeDo from "./sections/OctoCurse/OctoCurseWhatDidWeDo";
+import FAQ from "./sections/OctoCurse/OctoCurseFAQ";
+import MoreGames from "./sections/OctoCurse/OctoCurseMoreGames";
 import Navbar from "@/app/sections/Navbar";
-import Features from "./sections/OctoCurseFeatures";
+import Features from "./sections/OctoCurse/OctoCurseFeatures";
 
 export default function Octocurse() {
   return (
