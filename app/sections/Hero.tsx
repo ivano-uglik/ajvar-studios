@@ -29,11 +29,11 @@ export default function Hero({ className }: { className?: string }) {
       >
         <div className="text-center">
           <h1
-            className={`${unbounded.className} text-2xl lg:text-[3.5rem] lg:leading-[4.2rem] uppercase font-black lg:w-3/4 mx-auto content-container`}
+            className={`${unbounded.className} text-2xl lg:text-[3.2rem] lg:leading-[4rem] uppercase font-black lg:w-3/4 mx-auto content-container`}
           >
             At Ajvar, Our Dream is to Create Games that Bring Smiles.
           </h1>
-          <h2 className="lg:w-1/3 mx-auto">
+          <h2 className="lg:w-1/3 mx-auto text-xl">
             Ajvar turns childhood memories into games for everyone, offering
             entertainment that makes every moment fun!
           </h2>

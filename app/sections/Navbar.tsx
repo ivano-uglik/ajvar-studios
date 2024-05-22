@@ -13,7 +13,6 @@ export default function Navbar({
   className,
   active,
   navItems = [
-    { label: "Start", path: "/" },
     { label: "Bullets & Brains", path: "/games/bullet-brains" },
     { label: "Octo Curse", path: "/games/octocurse" },
     { label: "Zombie vs Towers", path: "/games/zombie-vs-towers" },

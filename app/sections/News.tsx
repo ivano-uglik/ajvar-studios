@@ -1,4 +1,4 @@
-import octoOctopus from "@/public/octocurse-assets/octo-octopus.svg";
+import octoOctopus from "@/public/octocurse-assets/octo-octopus.png";
 import Image from "next/image";
 
 import { Unbounded } from "next/font/google";
@@ -15,7 +15,7 @@ export default function News({ className }: { className?: string }) {
       >
         <Image
           src={octoOctopus}
-          className="absolute top-[-30vw] left-[47%] transform-translate-1/2 -translate-x-1/2 w-[30vw] h-[30vw] z-30"
+          className="absolute top-[-30vw] left-[49%] transform-translate-1/2 -translate-x-1/2 w-[22vw] z-30"
           alt=""
           unoptimized
         />
