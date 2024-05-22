@@ -18,8 +18,8 @@ export default function Octocurse() {
       </div>
       <VideoFunFacts />
       <Grid />
-      <WhatDidWeDo />
-      <FAQ />
+      {/* <WhatDidWeDo /> */}
+      {/* <FAQ /> */}
       <MoreGames />
     </>
   );

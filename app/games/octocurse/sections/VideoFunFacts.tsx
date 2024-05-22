@@ -24,29 +24,31 @@ export default function VideoFunFacts() {
       <div className="py-8 lg:py-16 bg-[#C0F504] rounded-t-[3rem] lg:rounded-t-[5rem] px-4 lg:px-0">
         <Video video={octoVideo} iframe={iframe} />
         <div className="content-container mx-auto">
-          <h3
-            className={`${unbounded.className} font-black text-3xl text-center uppercase`}
-          >
-            Fun Facts
-          </h3>
-          <div className="flex gap-4 sm:gap-8 justify-center items-center py-8 flex-row">
-            <div className="flex flex-col items-center justify-center p-6 bg-[#D9F968] rounded-3xl">
-              <h2
-                className={`${unbounded.className} font-black text-3xl sm:text-5xl`}
-              >
-                123m
-              </h2>
-              <h3 className="text-lg sm:text-xl">Downloads</h3>
+          {/* <div>
+            <h3
+              className={`${unbounded.className} font-black text-3xl text-center uppercase`}
+            >
+              Fun Facts
+            </h3>
+            <div className="flex gap-4 sm:gap-8 justify-center items-center py-8 flex-row">
+              <div className="flex flex-col items-center justify-center p-6 bg-[#D9F968] rounded-3xl">
+                <h2
+                  className={`${unbounded.className} font-black text-3xl sm:text-5xl`}
+                >
+                  123m
+                </h2>
+                <h3 className="text-lg sm:text-xl">Downloads</h3>
+              </div>
+              <div className="flex flex-col items-center justify-center py-4 px-8 bg-[#D9F968] rounded-3xl">
+                <h2
+                  className={`${unbounded.className} font-black text-3xl sm:text-5xl flex items-center gap-2`}
+                >
+                  <FaStar size={20} /> 4.7
+                </h2>
+                <h3 className="sm:text-lg">App Store Rating</h3>
+              </div>
             </div>
-            <div className="flex flex-col items-center justify-center py-4 px-8 bg-[#D9F968] rounded-3xl">
-              <h2
-                className={`${unbounded.className} font-black text-3xl sm:text-5xl flex items-center gap-2`}
-              >
-                <FaStar size={20} /> 4.7
-              </h2>
-              <h3 className="sm:text-lg">App Store Rating</h3>
-            </div>
-          </div>
+          </div> */}
           <div className="flex items-center justify-between flex-col lg:flex-row">
             <div className="py-16 text-xl text-[#2F3632] lg:basis-2/3">
               <h1
@@ -74,11 +76,6 @@ export default function VideoFunFacts() {
                   octopi? There was no time to ponder proper plural
                   permutations, because you, their courageous captain, were now
                   a cephalopod too!
-                </p>
-                <p>
-                  {
-                    "Of course, any sea skipper worth his salt wouldn’t let a bit of transmutation get him bent out of shape! Avoiding capture, you set on a platform-hopping escapade to save your buddies and make the malicious deity pay for his misdeeds! Put your skills to the test! Evade dastardly traps and defeat hordes of stubborn enemies! Collect crystals and climb the mysterious tower as you get closer and closer to the final showdown! Make your way through the tropical jungle, brave the harsh winter, weather the storm and endure other exciting environs!"
-                  }
                 </p>
               </div>
             </div>
