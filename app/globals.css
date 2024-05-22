@@ -95,6 +95,13 @@
   background-position: center;
 }
 
+.bg-gobo-showcase {
+  background: url("../public/gobo-assets/header_gobo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .bg-green {
   /* #2D7D00 */
   background: rgb(45, 125, 0);
