@@ -7,7 +7,7 @@ import grid4 from "@/public/octocurse-assets/octo-grid-4.png";
 
 export default function Grid() {
   return (
-    <div className="grid grid-cols-2 grid-rows-3 content-container mx-auto gap-x-2 gap-y-4 lg:gap-x-4 lg:gap-y-8 py-32 px-4 lg:px-0">
+    <div className="grid grid-cols-2 grid-rows-3 content-container mx-auto gap-x-2 gap-y-4 lg:gap-x-4 lg:gap-y-8 py-16 px-4 lg:px-0">
       <Image
         src={grid1}
         alt="OctoCurse gameplay"

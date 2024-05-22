@@ -5,6 +5,7 @@ import WhatDidWeDo from "./sections/WhatDidWeDo";
 import FAQ from "./sections/FAQ";
 import MoreGames from "./sections/MoreGames";
 import Navbar from "@/app/sections/Navbar";
+import Features from "./sections/OctoCurseFeatures";
 
 export default function Octocurse() {
   return (
@@ -18,6 +19,7 @@ export default function Octocurse() {
       </div>
       <VideoFunFacts />
       <Grid />
+      <Features />
       {/* <WhatDidWeDo /> */}
       {/* <FAQ /> */}
       <MoreGames />
