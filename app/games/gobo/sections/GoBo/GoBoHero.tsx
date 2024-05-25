@@ -7,7 +7,7 @@ const unbounded = Unbounded({ subsets: ["latin"] });
 
 export default function Hero() {
   return (
-    <div className="text-white">
+    <div className="bg-gobo-gradient text-white">
       <Image src={GoBoHeader} alt="" className="mx-auto py-8 w-[36rem]" />
       <div className="text-center mx-auto content-container px-4 lg:px-0">
         <div
@@ -15,11 +15,9 @@ export default function Hero() {
         >
           <h1>{"Challenge your mind, test your reflexes"}</h1>
         </div>
+        <h2 className="pt-8 text-center text-xl">Try it for free now!</h2>
         <div className="flex justify-center">
-          <AppStores
-            itch="https://ajvarstudio.itch.io/gobo-desert-of-cubes"
-            behance="https://www.behance.net/gallery/136061821/Gobo-Desert-of-Cubes-Game-Design"
-          />
+          <AppStores itch="https://ajvarstudio.itch.io/gobo-desert-of-cubes" />
         </div>
       </div>
     </div>

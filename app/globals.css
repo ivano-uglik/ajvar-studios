@@ -102,6 +102,13 @@
   background-position: center;
 }
 
+.bg-zombie-vs-towers-showcase {
+  background: url("../public/zombie-towers-assets/header_zt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .bg-green {
   /* #2D7D00 */
   background: rgb(45, 125, 0);
@@ -110,6 +117,28 @@
     rgba(45, 125, 0, 0) 0%,
     rgba(45, 125, 0, 1) 75%,
     rgba(45, 125, 0, 1) 100%
+  );
+}
+
+.bg-gobo-gradient {
+  /* #2D7D00 */
+  background: rgb(254, 183, 44);
+  background: linear-gradient(
+    180deg,
+    rgba(254, 183, 44, 0) 0%,
+    rgba(254, 183, 44, 1) 75%,
+    rgba(254, 183, 44, 1) 100%
+  );
+}
+
+.bg-zombie-towers-gradient {
+  /* #2D7D00 */
+  background: rgb(185, 214, 57);
+  background: linear-gradient(
+    180deg,
+    rgba(185, 214, 57, 0) 0%,
+    rgba(185, 214, 57, 1) 90%,
+    rgba(185, 214, 57, 1) 100%
   );
 }
 
