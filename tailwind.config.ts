@@ -17,6 +17,7 @@ const config: Config = {
         ajvar: "#E41943",
         octocurse: "#64E93B",
         gobo: "#FEB72C",
+        "bullets-brains": "#01272C",
         "zombie-vs-towers": "#B9D639",
       },
     },
