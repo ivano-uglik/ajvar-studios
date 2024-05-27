@@ -122,7 +122,7 @@
   background: linear-gradient(
     180deg,
     rgba(45, 125, 0, 0) 0%,
-    rgba(45, 125, 0, 1) 75%,
+    rgba(45, 125, 0, 0.2) 45%,
     rgba(45, 125, 0, 1) 100%
   );
 }
@@ -133,7 +133,7 @@
   background: linear-gradient(
     180deg,
     rgba(254, 183, 44, 0) 0%,
-    rgba(254, 183, 44, 1) 75%,
+    rgba(254, 183, 44, 0) 50%,
     rgba(254, 183, 44, 1) 100%
   );
 }
@@ -144,7 +144,7 @@
   background: linear-gradient(
     180deg,
     rgba(185, 214, 57, 0) 0%,
-    rgba(185, 214, 57, 1) 90%,
+    rgba(185, 214, 57, 0) 50%,
     rgba(185, 214, 57, 1) 100%
   );
 }
@@ -155,7 +155,8 @@
   background: linear-gradient(
     180deg,
     rgba(1, 39, 44, 0) 0%,
-    rgba(1, 39, 44, 1) 90%,
+    rgba(1, 39, 44, 0.2) 50%,
+    rgba(1, 39, 44, 1) 100%,
     rgba(1, 39, 44, 1) 100%
   );
 }

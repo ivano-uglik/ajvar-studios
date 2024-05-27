@@ -8,7 +8,7 @@ export default function ZombieVsTowers() {
     <>
       <Navbar
         className="px-4 lg:px-0 sticky top-0 z-50"
-        active={[{ label: "Zombie vs Towers" }]}
+        active={[{ label: "Zombies vs Towers" }]}
       />
       <div className="bg-zombie-vs-towers-showcase">
         <Hero />

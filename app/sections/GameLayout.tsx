@@ -130,7 +130,7 @@ export default function GameLayout({ className }: { className?: string }) {
             <h2
               className={`${unbounded.className} text-5xl lg:text-[4rem] font-black leading-relaxed text-zombie-vs-towers`}
             >
-              Zombie vs Towers
+              Zombies vs Towers
             </h2>
             <h3 className="pt-4 text-2xl lg:w-3/4">
               {
@@ -148,12 +148,12 @@ export default function GameLayout({ className }: { className?: string }) {
             <Image
               src={zombieTowersMain}
               className="w-full rounded-t-3xl rounded-b-3xl"
-              alt="Zombie vs Towers Game Layout"
+              alt="Zombies vs Towers Game Layout"
             />
           </Link>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-16 py-16 content-container mx-auto">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-16 py-16 pb-32 content-container mx-auto">
         <div className="basis-1/2">
           <Link href={"games/gobo"}>
             <Image

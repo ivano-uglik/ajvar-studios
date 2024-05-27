@@ -29,11 +29,11 @@ export default function VideoFunFacts() {
               <h1
                 className={`${unbounded.className} font-black text-3xl lg:text-4xl pb-12 text-center lg:text-left`}
               >
-                What is Zombie Towers?
+                What is Zombies vs Towers?
               </h1>
               <div className="flex flex-col gap-8 font-medium">
                 <p>
-                  Zombie Towers is the ultimate tower defense game for your
+                  Zombies vs Towers is the ultimate tower defense game for your
                   mobile platform of choice. The last human outpost has set you
                   up as commander of defense. Build towers and workers and start
                   bringing ammo to the towers so they can shoot down zombies.

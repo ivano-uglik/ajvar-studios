@@ -5,7 +5,7 @@ export default function Features() {
   return (
     <div className="mx-auto content-container px-4 lg:px-0 pb-16 text-white">
       <div
-        className={`${unbounded.className} text-zombie-vs-towers text-center font-black text-4xl lg:text-6xl uppercase lg:leading-[1.2] overflow-x-clip`}
+        className={`${unbounded.className} text-zombie-vs-towers text-center font-black text-3xl lg:text-4xl uppercase lg:leading-[1.2] overflow-x-clip`}
       >
         <h1>{"Features"}</h1>
       </div>

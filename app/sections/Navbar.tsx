@@ -15,8 +15,9 @@ export default function Navbar({
   navItems = [
     { label: "Bullets & Brains", path: "/games/bullet-brains" },
     { label: "Octo Curse", path: "/games/octocurse" },
-    { label: "Zombie vs Towers", path: "/games/zombie-vs-towers" },
+    { label: "Zombies vs Towers", path: "/games/zombie-vs-towers" },
     { label: "GoBo", path: "/games/gobo" },
+    { label: "Contact Us", path: "contact-us" },
   ],
 }: {
   className?: string;
@@ -43,11 +44,11 @@ export default function Navbar({
         scrolling ? "py-2 shadow-2xl" : "py-4"
       } text-ajvar content-container mx-auto ${className} sticky top-0 bg-white rounded-b-3xl transition-all ease-in-out duration-300 z-50`}
     >
-      <nav className="flex justify-between items-center mx-4">
+      <nav className="flex justify-between items-center mx-4 relative">
         <Link href="/">
           <div
             className={`${unbounded.className} font-bold text-3xl ${
-              scrolling ? "w-20" : "lg:ml-16 w-28"
+              scrolling ? "absolute shadow-2xl bg-white w-32" : "lg:ml-16 w-28"
             }  transition-all ease-in-out duration-300`}
           >
             <Image
@@ -82,7 +83,7 @@ export default function Navbar({
         </ul>
         <div>
           {/* <Button text="Contact Us" /> */}
-          <Link href="/contact-us">
+          {/* <Link href="/contact-us">
             <button
               className={`${
                 unbounded.className
@@ -92,7 +93,7 @@ export default function Navbar({
             >
               Contact Us
             </button>
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </div>

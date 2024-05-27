@@ -3,6 +3,7 @@ import Hero from "./sections/GoBo/GoBoHero";
 import Video from "./sections/GoBo/GoBoVideo";
 import Grid from "./sections/GoBo/GoBoGrid";
 import Features from "./sections/GoBo/GoBoFeatures";
+import MoreGames from "./sections/GoBo/GoBoMoreGames";
 export default function Gobo() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Gobo() {
         <Grid />
         <Features />
       </div>
+      <MoreGames />
     </>
   );
 }
