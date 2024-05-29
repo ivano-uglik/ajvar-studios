@@ -17,7 +17,7 @@ export default function Navbar({
     { label: "Octo Curse", path: "/games/octocurse" },
     { label: "Zombies vs Towers", path: "/games/zombie-vs-towers" },
     { label: "GoBo", path: "/games/gobo" },
-    { label: "Contact Us", path: "contact-us" },
+    { label: "Contact Us", path: "/contact-us" },
   ],
 }: {
   className?: string;
@@ -25,6 +25,7 @@ export default function Navbar({
   navItems?: { label: string; path: string }[];
 }) {
   const [scrolling, setScrolling] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +49,9 @@ export default function Navbar({
         <Link href="/">
           <div
             className={`${unbounded.className} font-bold text-3xl ${
-              scrolling ? "absolute shadow-2xl bg-white w-32" : "lg:ml-16 w-28"
+              scrolling
+                ? "w-24 lg:absolute lg:w-32 lg:-top-1 "
+                : "lg:ml-16 w-28"
             }  transition-all ease-in-out duration-300`}
           >
             <Image
@@ -60,14 +63,6 @@ export default function Navbar({
           </div>
         </Link>
         <ul className="hidden lg:flex gap-[3vw] items-center">
-          {/* {active?.map((item: { label: string }, index: number) => (
-            <li
-              key={index}
-              className="bg-ajvar rounded-full px-5 py-2 text-white"
-            >
-              <Link href={item.path}>{item.label}</Link>
-            </li>
-          ))} */}
           {navItems?.map((item, index) => (
             <li
               key={index}
@@ -81,21 +76,30 @@ export default function Navbar({
             </li>
           ))}
         </ul>
-        <div>
-          {/* <Button text="Contact Us" /> */}
-          {/* <Link href="/contact-us">
-            <button
-              className={`${
-                unbounded.className
-              } text-white bg-ajvar font-bold rounded-full ${
-                scrolling ? "px-16 py-2" : "px-4 py-3"
-              } text-xs lg:text-base transition-all duration-300 ease-in-out`}
-            >
-              Contact Us
-            </button>
-          </Link> */}
+        <div className="lg:hidden">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-ajvar focus:outline-none"
+          >
+            ☰
+          </button>
         </div>
       </nav>
+      {menuOpen && (
+        <ul className="lg:hidden items-center mt-4 text-end">
+          {navItems?.map((item, index) => (
+            <Link href={item.path} key={index}>
+              <li
+                className={`px-5 py-4  ${
+                  item.label === active[0].label ? "bg-ajvar text-white" : ""
+                }`}
+              >
+                {item.label}
+              </li>
+            </Link>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
