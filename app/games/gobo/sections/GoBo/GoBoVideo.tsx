@@ -21,7 +21,7 @@ export default function VideoFunFacts() {
 
   return (
     <div className="bg-gobo">
-      <div className="py-8 lg:py-16 bg-[#01B200] text-white rounded-t-[3rem] lg:rounded-t-[5rem] px-4 lg:px-0">
+      <div className="py-8 lg:py-16 bg-[#FEB72C] text-white rounded-t-[3rem] lg:rounded-t-[5rem] px-4 lg:px-0">
         <Video video={goboVideo} iframe={iframe} />
         <div className="content-container mx-auto">
           <div className="flex items-center justify-between flex-col lg:flex-row">

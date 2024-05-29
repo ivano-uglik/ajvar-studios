@@ -21,7 +21,7 @@ export default function MoreGames({ className }: { className?: string }) {
     />
   );
   return (
-    <section className="md:pt-[10vh] lg:pt-[40vh] mt-32">
+    <section className="md:pt-[10vh] lg:pt-[40vh] mt-32 text-[#A61400]">
       <div
         className={`relative bg-gobo w-full rounded-t-3xl lg:rounded-t-[5rem] pb-16 ${className}`}
       >
@@ -34,7 +34,7 @@ export default function MoreGames({ className }: { className?: string }) {
         <div className="absolute top-[-8vw] -z-10 left-1/4 transform-translate-1/4 -translate-x-1/4 w-[30vw] h-[30vw] rounded-full bg-gobo"></div>
         <div className="absolute top-[-20vw] -z-10 left-1/2 transform-translate-2/4 -translate-x-2/4 w-[30vw] h-[30vw] rounded-full bg-gobo"></div>
         <div className="absolute top-[-8vw] -z-10 left-3/4 transform-translate-3/4 -translate-x-3/4 w-[30vw] h-[30vw] rounded-full bg-gobo"></div>
-        <div className="content-container mx-auto pt-16 lg:pt-32 text-white z-40">
+        <div className="content-container mx-auto pt-16 lg:pt-32 z-40">
           <div className="text-center">
             <h1
               className={`${unbounded.className} font-black text-5xl uppercase`}
