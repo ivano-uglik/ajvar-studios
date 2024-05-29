@@ -10,27 +10,27 @@ export default function Grid() {
     <div className="grid grid-cols-2 grid-rows-3 content-container mx-auto gap-x-2 gap-y-4 lg:gap-x-4 lg:gap-y-8 py-16 px-4 lg:px-0">
       <Image
         src={grid1}
-        alt="Zombies vs Towers gameplay"
+        alt="OctoCurse gameplay"
         placeholder="blur"
-        className="col-span-2 rounded-3xl lg:rounded-[1.5rem] h-64 w-full object-cover"
+        className="col-span-2 rounded-3xl lg:rounded-[4.5rem] h-full w-full object-cover"
       />
       <Image
         src={grid2}
-        alt="Zombies vs Towers gameplay"
+        alt="OctoCurse gameplay"
         placeholder="blur"
-        className=" rounded-3xl lg:rounded-[1.5rem] h-64 w-full object-cover"
+        className=" rounded-3xl lg:rounded-[4.5rem] h-full w-full object-cover"
       />
       <Image
         src={grid3}
-        alt="Zombies vs Towers gameplay"
+        alt="OctoCurse gameplay"
         placeholder="blur"
-        className=" rounded-3xl lg:rounded-[1.5rem] h-64 w-full object-cover"
+        className=" rounded-3xl lg:rounded-[4.5rem] h-full w-full object-cover"
       />
       <Image
         src={grid4}
-        alt="Zombies vs Towers gameplay"
+        alt="OctoCurse gameplay"
         placeholder="blur"
-        className="col-span-2 rounded-3xl lg:rounded-[1.5rem] h-64 w-full object-cover"
+        className="col-span-2 rounded-3xl lg:rounded-[4.5rem] h-full w-full object-cover"
       />
     </div>
   );

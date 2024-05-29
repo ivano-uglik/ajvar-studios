@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import appleLogo from "@/public/svg-assets/apple.svg";
 import androidLogo from "@/public/svg-assets/android.svg";
-import steamLogo from "@/public/svg-assets/steam.svg";
+import steamLogo from "@/public/svg-assets/wishlist-steam.webp";
 import psLogo from "@/public/svg-assets/playstation.svg";
 import nintendoLogo from "@/public/svg-assets/nintendo.svg";
 import itchLogo from "@/public/svg-assets/itchio.svg";
@@ -56,20 +56,6 @@ export default function AppStores({
           />
         </Link>
       )}
-      {steam && (
-        <Link
-          target="_blank"
-          href={steam}
-          className="p-4 rounded-full aspect-square shadow-lg bg-white hover:scale-125 hover:opacity-75 transition-all duration-100"
-        >
-          <Image
-            src={steamLogo}
-            alt="Go to Steam"
-            className="w-8 aspect-square"
-            unoptimized
-          />
-        </Link>
-      )}
       {ps && (
         <Link
           target="_blank"
@@ -108,6 +94,20 @@ export default function AppStores({
             src={behanceLogo}
             alt="Go to Behance"
             className="w-8 aspect-square"
+            unoptimized
+          />
+        </Link>
+      )}
+      {steam && (
+        <Link
+          target="_blank"
+          href={steam}
+          className="flex justify-center items-center w-48"
+        >
+          <Image
+            src={steamLogo}
+            alt="Go to Steam"
+            className="w-full border border-black rounded-2xl"
             unoptimized
           />
         </Link>
