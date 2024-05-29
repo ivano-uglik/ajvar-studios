@@ -3,6 +3,7 @@ import Hero from "./sections/ZombieTowersHero";
 import Video from "./sections/ZombieTowersVideo";
 import Grid from "./sections/ZombieTowersGrid";
 import Features from "./sections/ZombieTowersFeatures";
+import MoreGames from "./sections/ZombieTowersMoreGames";
 export default function ZombieVsTowers() {
   return (
     <>
@@ -13,11 +14,12 @@ export default function ZombieVsTowers() {
       <div className="bg-zombie-vs-towers-showcase">
         <Hero />
       </div>
-      <div className="bg-[#246c4a]">
-        <Video />
-        <Grid />
-        <Features />
-      </div>
+      {/* <div className="bg-[#246c4a]"> */}
+      <Video />
+      <Grid />
+      <Features />
+      {/* </div> */}
+      <MoreGames />
     </>
   );
 }

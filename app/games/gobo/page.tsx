@@ -14,11 +14,11 @@ export default function Gobo() {
       <div className="bg-gobo-showcase">
         <Hero />
       </div>
-      <div className="bg-[#01B200]">
-        <Video />
-        <Grid />
-        <Features />
-      </div>
+      {/* <div className="bg-[#01B200]"> */}
+      <Video />
+      <Grid />
+      <Features />
+      {/* </div> */}
       <MoreGames />
     </>
   );

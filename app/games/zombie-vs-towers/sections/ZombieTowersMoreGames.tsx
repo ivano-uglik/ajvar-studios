@@ -4,8 +4,8 @@ import { Unbounded } from "next/font/google";
 const unbounded = Unbounded({ subsets: ["latin"] });
 
 import Button from "@/app/components/Button";
-import bulletBrainsText from "@/public/bulletbrains-assets/bb-text.webp";
-import bulletBrainsBackground from "@/public/bulletbrains-assets/bb-bg-1.webp";
+import GoBoLogo from "@/public/gobo-assets/logo.png";
+import GoBoBackground from "@/public/gobo-assets/gobo-content-1.webp";
 import Video from "@/app/sections/Video";
 import Link from "next/link";
 export default function MoreGames({ className }: { className?: string }) {
@@ -13,7 +13,7 @@ export default function MoreGames({ className }: { className?: string }) {
     <iframe
       width="100%"
       height="100%"
-      src="https://www.youtube-nocookie.com/embed/c6cDpJ5qe7w?si=Bfn2C_pcRDchK5VD"
+      src="https://www.youtube.com/embed/3WGLFuVevIQ?si=pvyVoZ89u9NWD1W6"
       title="YouTube video player"
       frameBorder={0}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -23,17 +23,17 @@ export default function MoreGames({ className }: { className?: string }) {
   return (
     <section className="md:pt-[10vh] lg:pt-[40vh] mt-32">
       <div
-        className={`relative bg-[#7BBBC4] w-full rounded-t-3xl lg:rounded-t-[5rem] pb-16 ${className}`}
+        className={`relative bg-gobo w-full rounded-t-3xl lg:rounded-t-[5rem] pb-16 ${className}`}
       >
         <Image
-          src={bulletBrainsText}
-          className="absolute top-[-15vw] left-[50%] transform-translate-1/2 -translate-x-1/2 w-[35vw] z-30"
+          src={GoBoLogo}
+          className="absolute top-[-25vw] lg:top-[-15vw] left-[50%] transform-translate-1/2 -translate-x-1/2 w-[50vw] lg:w-[35vw] z-30"
           alt=""
           unoptimized
         />
-        <div className="absolute top-[-8vw] -z-10 left-1/4 transform-translate-1/4 -translate-x-1/4 w-[30vw] h-[30vw] rounded-full bg-[#7BBBC4]"></div>
-        <div className="absolute top-[-20vw] -z-10 left-1/2 transform-translate-2/4 -translate-x-2/4 w-[30vw] h-[30vw] rounded-full bg-[#7BBBC4]"></div>
-        <div className="absolute top-[-8vw] -z-10 left-3/4 transform-translate-3/4 -translate-x-3/4 w-[30vw] h-[30vw] rounded-full bg-[#7BBBC4]"></div>
+        <div className="absolute top-[-8vw] -z-10 left-1/4 transform-translate-1/4 -translate-x-1/4 w-[30vw] h-[30vw] rounded-full bg-gobo"></div>
+        <div className="absolute top-[-20vw] -z-10 left-1/2 transform-translate-2/4 -translate-x-2/4 w-[30vw] h-[30vw] rounded-full bg-gobo"></div>
+        <div className="absolute top-[-8vw] -z-10 left-3/4 transform-translate-3/4 -translate-x-3/4 w-[30vw] h-[30vw] rounded-full bg-gobo"></div>
         <div className="content-container mx-auto pt-16 lg:pt-32 text-white z-40">
           <div className="text-center">
             <h1
@@ -50,13 +50,13 @@ export default function MoreGames({ className }: { className?: string }) {
             <Video
               className="px-4 lg:px-0"
               iframe={iframe}
-              video={bulletBrainsBackground}
+              video={GoBoBackground}
             />
           </div>
           <div className="text-center">
-            <Link href={"bullet-brains"}>
+            <Link href={"gobo"}>
               <Button
-                text="See Bullets & Brains"
+                text="See GoBo"
                 bg="bg-white"
                 textColor="text-ajvar"
                 px="px-16"

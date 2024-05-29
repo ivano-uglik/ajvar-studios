@@ -3,14 +3,14 @@ const unbounded = Unbounded({ subsets: ["latin"] });
 
 export default function Features() {
   return (
-    <div className="mx-auto content-container px-4 lg:px-0 pb-16 text-white">
+    <div className="mx-auto content-container px-4 lg:px-0">
       <div
         className={`${unbounded.className} text-gobo text-center font-black text-3xl lg:text-4xl uppercase lg:leading-[1.2] overflow-x-clip`}
       >
         <h1>{"Features"}</h1>
       </div>
       <div className="flex justify-center py-8">
-        <ul className="text-2xl list-disc flex flex-col gap-2">
+        <ul className="text-xl list-disc flex flex-col gap-2 pl-6">
           <li>
             <span className="text-gobo font-semibold">
               15 brain-teasing levels

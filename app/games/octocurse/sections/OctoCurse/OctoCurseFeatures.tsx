@@ -10,7 +10,7 @@ export default function Features() {
         <h1>{"Features"}</h1>
       </div>
       <div className="flex justify-center py-8">
-        <ul className="text-xl list-disc flex flex-col gap-2">
+        <ul className="list-disc flex flex-col gap-2 pl-6">
           <li>
             Precise and intuitive{" "}
             <span className="text-octocurse font-semibold">

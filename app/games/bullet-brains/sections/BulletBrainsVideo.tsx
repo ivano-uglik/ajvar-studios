@@ -20,8 +20,8 @@ export default function VideoFunFacts() {
   );
 
   return (
-    <div className="bg-bullets-brains">
-      <div className="py-8 lg:py-16 bg-[#003E44] text-white rounded-t-[3rem] lg:rounded-t-[5rem] px-4 lg:px-0">
+    <div className="bg-bullets-brains text-white">
+      <div className="py-8 lg:py-16 bg-[#003E44] rounded-t-[3rem] lg:rounded-t-[5rem] px-4 lg:px-0">
         <Video video={BulletsBrainsVideo} iframe={iframe} />
         <div className="content-container mx-auto">
           <div className="flex items-center justify-between flex-col lg:flex-row">
