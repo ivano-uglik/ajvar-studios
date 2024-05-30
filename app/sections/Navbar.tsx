@@ -45,13 +45,11 @@ export default function Navbar({
         scrolling ? "py-2 shadow-2xl" : "py-4"
       } text-ajvar content-container mx-auto ${className} sticky top-0 bg-white rounded-b-3xl transition-all ease-in-out duration-300 z-50`}
     >
-      <nav className="flex justify-between items-center mx-4 relative">
+      <nav className="flex justify-between lg:justify-around items-center mx-4 lg:mx-12 relative">
         <Link href="/">
           <div
             className={`${unbounded.className} font-bold text-3xl ${
-              scrolling
-                ? "w-24 lg:absolute lg:w-32 lg:-top-1 "
-                : "lg:ml-16 w-28"
+              scrolling ? "w-24 lg:absolute lg:w-32 lg:-top-1 " : "w-28"
             }  transition-all ease-in-out duration-300`}
           >
             <Image
@@ -69,7 +67,7 @@ export default function Navbar({
               className={`${
                 item.label === active[0].label
                   ? "bg-ajvar rounded-full px-5 py-2 text-white"
-                  : ""
+                  : "py-2"
               }`}
             >
               <Link href={item.path}>{item.label}</Link>

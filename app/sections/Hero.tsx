@@ -8,20 +8,29 @@ import nanobit from "@/public/ajvar/nanobit.svg";
 import edenap from "@/public/who-we-work-with/logo_edenap.png";
 import fearem from "@/public/who-we-work-with/logo_feraem.png";
 import ironward from "@/public/who-we-work-with/logo_ironward.png";
+import nogravitygames from "@/public/who-we-work-with/logo_ngg.png";
 const unbounded = Unbounded({ subsets: ["latin"] });
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { A11y } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import Link from "next/link";
+import { useRef } from "react";
 export default function Hero({ className }: { className?: string }) {
   const images: any = [
-    { img: edenap, alt: "Edenap" },
-    { img: fearem, alt: "Fearem" },
-    { img: ironward, alt: "Ironward" },
+    { img: edenap, alt: "Edenap", link: "https://edenap.com/" },
+    { img: fearem, alt: "Fearem", link: "https://fearem.com/" },
+    { img: ironward, alt: "Ironward", link: "https://www.ironward.com/" },
+    {
+      img: nogravitygames,
+      alt: "No Gravity Games",
+      link: "https://nogravitygames.com/",
+    },
   ];
+  const swiperRef = useRef();
   return (
     <section>
       <div
@@ -52,30 +61,60 @@ export default function Hero({ className }: { className?: string }) {
             >
               Who we work with
             </h3>
-            {/* <div className="flex gap-4">
-              <button className="rounded-full p-2 lg:p-4 bg-gray-200 flex justify-center items-center transition-all duration-100 cursor-default">
+            <div className="flex gap-4">
+              <button
+                onClick={() => swiperRef.current?.slidePrev()}
+                className="rounded-full p-2 lg:p-4 bg-white flex justify-center items-center"
+              >
                 <FaChevronLeft color="#E41943" size={20} />
               </button>
-              <button className="rounded-full p-2 lg:p-4 bg-white flex justify-center items-center">
+              <button
+                onClick={() => swiperRef.current?.slidePrev()}
+                className="rounded-full p-2 lg:p-4 bg-white flex justify-center items-center"
+              >
                 <FaChevronRight color="#E41943" size={20} />
               </button>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
       <div className="bg-swiper">
-        <div className="ml-container ml-auto">
-          <Swiper modules={[A11y]} spaceBetween={15} slidesPerView={4}>
+        <div className="content-container mx-auto flex-wrap px-2 md:px-8 py-8">
+          <Swiper
+            modules={[A11y]}
+            spaceBetween={12}
+            slidesPerView={4}
+            loop={true}
+            onBeforeInit={(swiper: any) => {
+              swiperRef.current = swiper;
+            }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.5,
+              },
+              375: {
+                slidesPerView: 2.5,
+              },
+              768: {
+                slidesPerView: 3.5,
+              },
+              1024: {
+                slidesPerView: 4,
+              },
+            }}
+          >
             {images.map((img: any, index: any) => (
               <SwiperSlide key={index}>
-                <button className="px-4 py-2 lg:px-8 lg:py-8 bg-white rounded-lg lg:rounded-[2rem] shadow-md my-8">
-                  <Image
-                    src={img.img}
-                    alt={img.alt}
-                    className="w-32 lg:w-64"
-                    unoptimized
-                  />
-                </button>
+                <Link href={img.link} target="blank">
+                  <button className="px-4 py-2 lg:px-8 lg:py-8 bg-white rounded-lg lg:rounded-[1.5rem] shadow-md">
+                    <Image
+                      src={img.img}
+                      alt={img.alt}
+                      className="w-32 lg:w-48"
+                      unoptimized
+                    />
+                  </button>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>
