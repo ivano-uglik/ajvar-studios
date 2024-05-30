@@ -30,7 +30,7 @@ export default function Hero({ className }: { className?: string }) {
       link: "https://nogravitygames.com/",
     },
   ];
-  const swiperRef = useRef();
+  const swiperRef: any = useRef();
   return (
     <section>
       <div
