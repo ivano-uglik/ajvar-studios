@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Unbounded } from "next/font/google";
 const unbounded = Unbounded({ subsets: ["latin"] });
 
-import octoCharacter from "@/public/octocurse-assets/octo-character.svg";
+import octoCharacter from "@/public/octocurse-assets/octo-octopus.png";
 export default function VideoFunFacts() {
   const iframe = (
     <iframe
@@ -80,7 +80,7 @@ export default function VideoFunFacts() {
               </div>
             </div>
             <div className="basis-1/2 w-64">
-              <Image src={octoCharacter} alt="" />
+              <Image src={octoCharacter} alt="" className="w-80 mx-auto" />
             </div>
           </div>
         </div>

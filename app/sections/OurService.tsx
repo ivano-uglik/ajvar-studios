@@ -39,21 +39,21 @@ export default function OurService({ className }: { className?: string }) {
 
   return (
     <section className="bg-[#FFFBF2] pt-32 pb-8 rounded-t-3xl lg:rounded-t-[5rem]">
-      <div className="content-container mx-auto">
+      <div className="mx-auto">
         <div>
           <h1
-            className={`${unbounded.className} font-black text-3xl lg:text-5xl text-ajvar text-center uppercase`}
+            className={`${unbounded.className} font-black text-4xl lg:text-5xl text-ajvar text-center uppercase`}
           >
-            Our Service
+            Our Services
           </h1>
           <p className="text-center lg:text-xl lg:w-1/2 mx-auto pt-4">
-            Games we did for others. Find your new favorite with these exciting
-            and wildly popular games!
+            We offer a wide variety of services to meet your needs. Feel free to
+            contact us for more information.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row items-center lg:justify-around flex-wrap gap-8 pt-24">
-          {games.map((game, index) => (
-            <div key={index} className="w-[20rem]">
+        <div className="flex flex-col xl:flex-row items-center xl:justify-around flex-wrap gap-8 pt-24 w-[50vw] xl:w-full mx-auto">
+          {/* {games.map((game, index) => (
+            <div key={index} className="xl:w-[28rem]">
               <div className="relative w-full hover:scale-110 transition-all duration-100">
                 <Link href="#" target="_blank">
                   <Image
@@ -83,7 +83,40 @@ export default function OurService({ className }: { className?: string }) {
                 apple={game.appStoreLink}
               />
             </div>
-          ))}
+          ))} */}
+          <div className="xl:w-[28rem]">
+            <h2
+              className={`${unbounded.className} font-black text-4xl text-ajvar uppercase`}
+            >
+              1. Game Production
+            </h2>
+            <p>
+              We create engaging and immersive gaming experiences tailored to
+              your vision.
+            </p>
+          </div>
+          <div className="xl:w-[28rem]">
+            <h2
+              className={`${unbounded.className} font-black text-4xl text-ajvar uppercase`}
+            >
+              2. Art Direction
+            </h2>
+            <p>
+              Professional art direction services to enhance the visual appeal
+              of your projects.
+            </p>
+          </div>
+          <div className="xl:w-[28rem]">
+            <h2
+              className={`${unbounded.className} font-black text-4xl text-ajvar uppercase`}
+            >
+              3. UI/UX Design
+            </h2>
+            <p>
+              Specialized UI/UX services to create intuitive and user-friendly
+              interfaces for your digital products.
+            </p>
+          </div>
         </div>
       </div>
     </section>
