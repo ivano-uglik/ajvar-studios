@@ -39,10 +39,10 @@ export default function OurService({ className }: { className?: string }) {
 
   return (
     <section className="bg-[#FFFBF2] pt-32 pb-8 rounded-t-3xl lg:rounded-t-[5rem]">
-      <div className="mx-auto">
+      <div className="content-container mx-auto px-8">
         <div>
           <h1
-            className={`${unbounded.className} font-black text-4xl lg:text-5xl text-ajvar text-center uppercase`}
+            className={`${unbounded.className} font-black text-3xl lg:text-5xl text-ajvar text-center uppercase`}
           >
             Our Services
           </h1>
@@ -51,9 +51,9 @@ export default function OurService({ className }: { className?: string }) {
             contact us for more information.
           </p>
         </div>
-        <div className="flex flex-col xl:flex-row items-center xl:justify-around flex-wrap gap-8 pt-24 w-[50vw] xl:w-full mx-auto">
+        <div className="flex flex-col items-center xl:justify-around flex-wrap gap-8 pt-24 mx-auto">
           {/* {games.map((game, index) => (
-            <div key={index} className="xl:w-[28rem]">
+            <div key={index} className="xl:w-[36rem] mx-auto">
               <div className="relative w-full hover:scale-110 transition-all duration-100">
                 <Link href="#" target="_blank">
                   <Image
@@ -84,33 +84,33 @@ export default function OurService({ className }: { className?: string }) {
               />
             </div>
           ))} */}
-          <div className="xl:w-[28rem]">
+          <div className="xl:w-[36rem] mx-auto">
             <h2
-              className={`${unbounded.className} font-black text-4xl text-ajvar uppercase`}
+              className={`${unbounded.className} font-black text-3xl text-ajvar uppercase`}
             >
-              1. Game Production
+              Game Production
             </h2>
             <p>
               We create engaging and immersive gaming experiences tailored to
               your vision.
             </p>
           </div>
-          <div className="xl:w-[28rem]">
+          <div className="xl:w-[36rem] mx-auto">
             <h2
-              className={`${unbounded.className} font-black text-4xl text-ajvar uppercase`}
+              className={`${unbounded.className} font-black text-3xl text-ajvar uppercase`}
             >
-              2. Art Direction
+              Art Direction
             </h2>
             <p>
               Professional art direction services to enhance the visual appeal
               of your projects.
             </p>
           </div>
-          <div className="xl:w-[28rem]">
+          <div className="xl:w-[36rem] mx-auto">
             <h2
-              className={`${unbounded.className} font-black text-4xl text-ajvar uppercase`}
+              className={`${unbounded.className} font-black text-3xl text-ajvar uppercase`}
             >
-              3. UI/UX Design
+              UI/UX Design
             </h2>
             <p>
               Specialized UI/UX services to create intuitive and user-friendly
