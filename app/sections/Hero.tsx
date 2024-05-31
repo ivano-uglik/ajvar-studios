@@ -30,7 +30,7 @@ export default function Hero({ className }: { className?: string }) {
       link: "https://nogravitygames.com/",
     },
   ];
-  const swiperRef: any = useRef();
+  // const swiperRef: any = useRef();
   return (
     <section>
       <div
@@ -61,7 +61,7 @@ export default function Hero({ className }: { className?: string }) {
             >
               Who we work with
             </h3>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <button
                 onClick={() => swiperRef.current?.slidePrev()}
                 className="rounded-full p-2 lg:p-4 bg-white flex justify-center items-center"
@@ -74,7 +74,7 @@ export default function Hero({ className }: { className?: string }) {
               >
                 <FaChevronRight color="#E41943" size={20} />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -85,9 +85,9 @@ export default function Hero({ className }: { className?: string }) {
             spaceBetween={12}
             slidesPerView={4}
             loop={true}
-            onBeforeInit={(swiper: any) => {
-              swiperRef.current = swiper;
-            }}
+            // onBeforeInit={(swiper: any) => {
+            //   swiperRef.current = swiper;
+            // }}
             breakpoints={{
               0: {
                 slidesPerView: 1.5,

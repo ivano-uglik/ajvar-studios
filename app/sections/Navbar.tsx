@@ -48,8 +48,8 @@ export default function Navbar({
       <nav className="flex justify-between lg:justify-around items-center mx-4 lg:mx-12 relative">
         <Link href="/">
           <div
-            className={`${unbounded.className} font-bold text-3xl ${
-              scrolling ? "w-24 lg:absolute lg:w-32 lg:-top-1 " : "w-28"
+            className={`${unbounded.className} font-bold text-3xl w-32 ${
+              scrolling ? "lg:absolute lg:-top-1 lg:left-16" : ""
             }  transition-all ease-in-out duration-300`}
           >
             <Image
