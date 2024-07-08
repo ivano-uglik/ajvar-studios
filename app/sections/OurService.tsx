@@ -51,7 +51,7 @@ export default function OurService({ className }: { className?: string }) {
             contact us for more information.
           </p>
         </div>
-        <div className="flex flex-col items-center xl:justify-around flex-wrap gap-8 pt-24 mx-auto">
+        <div className="flex items-center justify-around flex-wrap md:flex-nowrap gap-8 pt-24 mx-auto pb-16 lg:pb-0">
           {/* {games.map((game, index) => (
             <div key={index} className="xl:w-[36rem] mx-auto">
               <div className="relative w-full hover:scale-110 transition-all duration-100">

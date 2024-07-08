@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import grid1 from "@/public/bulletbrains-assets/pic_bb_1.jpg";
-import grid2 from "@/public/bulletbrains-assets/pic_bb_2.jpg";
+import grid1 from "@/public/bulletbrains-assets/pic_bb_2.jpg";
+import grid2 from "@/public/bulletbrains-assets/pic_bb_1.jpg";
 import grid3 from "@/public/bulletbrains-assets/pic_bb_3.jpg";
 import grid4 from "@/public/bulletbrains-assets/pic_bb_4.jpg";
 
