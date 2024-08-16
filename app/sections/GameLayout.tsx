@@ -41,8 +41,8 @@ export default function GameLayout({ className }: { className?: string }) {
               3 Games Live
             </h3>
             <p className="text-xl">
-              And more incoming. Creating amazing games is our DNA! Come and
-              discover our latest games and future releases.
+              Creating fun is in our DNA! Our games are engineered to spread fun
+              and excitement. Check our in-gen-ious releases and future plans.
             </p>
           </div>
         </div>
@@ -53,18 +53,18 @@ export default function GameLayout({ className }: { className?: string }) {
             <div>
               <Image
                 src={bulletBrainsIcon}
-                alt="Bullet & Brains logo"
+                alt="Bullets & Brains logo"
                 className="w-32 rounded-xl"
               />
             </div>
             <h2
               className={`${unbounded.className} text-3xl lg:text-5xl font-black leading-relaxed`}
             >
-              Bullet & Brains
+              Bullets & Brains
             </h2>
             <h3 className="pt-4 text-2xl lg:w-3/4">
               {
-                "Bullets and Brains is an adrenaline-pumping arcade top-down 3D shooter set in a post-apocalyptic world overrun by brain-hungry hordes of zombies. Prepare yourself for an intense battle against the never-ending onslaught of the undead."
+                "Adrenaline-pumping top-down 3D shooter set in a zombie-infested post-apocalyptic world."
               }
             </h3>
           </Link>
@@ -106,7 +106,7 @@ export default function GameLayout({ className }: { className?: string }) {
             </h2>
             <h3 className="pt-4 text-2xl lg:w-3/4">
               {
-                "Octo Curse is an action platformer following the story of a pirate captain who has been turned into an octopus by an evil spirit. The little octopus embarks on the quest to save the rest of his crew and reverse the curse."
+                "Action platformer following a pirate captain turned into an octopus."
               }
             </h3>
           </Link>
@@ -134,7 +134,7 @@ export default function GameLayout({ className }: { className?: string }) {
             </h2>
             <h3 className="pt-4 text-2xl lg:w-3/4">
               {
-                "You are the last group of survivors on the planet, and your objective is to defend your castle against the brutal waves of the enemy and take down the zombies army. This is what this addictive tower defense game is all about."
+                "Tower defense game featuring last survivors defending their castles against the zombies’ army."
               }
             </h3>
           </Link>

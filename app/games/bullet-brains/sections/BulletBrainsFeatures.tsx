@@ -14,34 +14,33 @@ export default function Features() {
           <li>
             Choose between{" "}
             <span className="font-semibold">many distinctive characters</span>,
-            each with their own starting weapon.
+            each with their own starting weapon
           </li>
           <li>
             Explore a sprawling{" "}
             <span className="font-semibold">post-apocalyptic environment</span>,
-            filled with atmospheric locations and hidden secrets.
+            filled with atmospheric locations and hidden secrets
           </li>
           <li>
             Engage in intense top-down 3D shooter combat against{" "}
             <span className="font-semibold">never-ending hordes</span> of
-            brain-hungry zombies.
+            brain-hungry zombies
           </li>
           <li>
             Group with last survivors to protect each other in mayhem battles -{" "}
             <span className="font-semibold">Bullets and Brains</span> offers a
-            co-op mode!
+            co-op mode
           </li>
           <li>
             Collect brains in order to level up and energy that grants{" "}
             <span className="font-semibold">powerful abilities</span>, allowing
-            you to unleash devastating attacks.
+            you to unleash devastating attacks
           </li>
           <li>
             Experience the game with your preferred control scheme,{" "}
             <span className="font-semibold">
               supporting both mouse and keyboard as well as gamepad
             </span>
-            .
           </li>
           <li>
             <span className="font-semibold">Test your survival skills</span>{" "}
@@ -52,33 +51,32 @@ export default function Features() {
             <span className="font-semibold">
               fast-paced action and dynamic gameplay
             </span>{" "}
-            that keeps you on the edge of your seat.
+            that keeps you on the edge of your seat
           </li>
           <li>
             Unleash your{" "}
             <span className="font-semibold">
               strategic thinking and skillful aim
             </span>{" "}
-            to overcome the relentless zombie onslaught.
+            to overcome the relentless zombie onslaught
           </li>
           <li>
             <span className="font-semibold">
               Adapt your tactics and loadouts
             </span>{" "}
-            to suit different enemy types and encounter two new challenging
-            foes.
+            to suit different enemy types and encounter two new challenging foes
           </li>
           <li>
             Uncover <span className="font-semibold">hidden collectibles</span>{" "}
             and unlock <span className="font-semibold">bonus content</span> as
-            you progress through the game.
+            you progress through the game
           </li>
           <li>
             Engage in thrilling and satisfying gunplay, with a{" "}
             <span className="font-semibold">
               wide range of weapons and explosives
             </span>{" "}
-            at your disposal.
+            at your disposal
           </li>
         </ul>
       </div>
