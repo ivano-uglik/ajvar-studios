@@ -5,9 +5,8 @@ import Navbar from "./sections/Navbar";
 import News from "./sections/News";
 import OurService from "./sections/OurService";
 import Video from "./sections/Video";
-
 import bulletBrainsBackground from "@/public/bulletbrains-assets/bb-bg-2.webp";
-
+import NewVideo from "./sections/NewVideo";
 export default function Home() {
   const iframe = (
     <iframe
@@ -23,11 +22,12 @@ export default function Home() {
   return (
     <>
       <Navbar className="px-4 lg:px-0" active={[{ label: "Start" }]} />
-      <Video
+      {/* <Video
         className="px-4 lg:px-0"
         video={bulletBrainsBackground}
         iframe={iframe}
-      />
+      /> */}
+      <NewVideo />
       <Hero className="px-4 lg:px-0" />
       <GameLayout className="px-4 lg:px-0" />
       <OurService className="px-4 lg:px-0" />
