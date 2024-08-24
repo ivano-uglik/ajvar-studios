@@ -65,7 +65,7 @@ export default function CopyrightNotice({ className }: { className?: string }) {
       <div
         className={`content-container flex items-center justify-center mx-auto pt-4 pb-0 md:pt-8 md:pb-8 text-lg ${className} md:h-[10vh]`}
       >
-        <div className="text-xl">
+        <div>
           <p className="text-center">
             &copy; Ajvar Studio. All rights reserved.
           </p>
