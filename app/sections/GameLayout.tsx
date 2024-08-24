@@ -153,7 +153,7 @@ export default function GameLayout({ className }: { className?: string }) {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-16 py-16 pb-32 content-container mx-auto">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-24 md:gap-16 py-16 pb-16 content-container mx-auto">
         <div className="basis-1/2">
           <Link href={"games/gobo"}>
             <Image

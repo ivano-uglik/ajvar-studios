@@ -31,7 +31,7 @@ export default function Home() {
       <Hero className="px-4 lg:px-0" />
       <GameLayout className="px-4 lg:px-0" />
       <OurService className="px-4 lg:px-0" />
-      <News className="px-4 lg:px-0" />
+      {/* <News className="px-4 lg:px-0" /> */}
       {/* <HorizontalScroll /> */}
     </>
   );

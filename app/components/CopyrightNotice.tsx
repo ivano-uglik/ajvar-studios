@@ -5,8 +5,8 @@ import behance from "@/public/svg-assets/Behance.svg";
 import linkedin from "@/public/svg-assets/in.png";
 export default function CopyrightNotice({ className }: { className?: string }) {
   return (
-    <div>
-      <div
+    <div className="relative">
+      {/* <div
         className={`content-container flex items-center justify-between mx-auto pt-4 pb-0 md:pt-8 md:pb-8 text-lg ${className} md:h-[10vh]`}
       >
         <div className="flex items-center gap-4 text-xl w-1/3">
@@ -58,6 +58,24 @@ export default function CopyrightNotice({ className }: { className?: string }) {
           href="https://github.com/ivano-uglik"
           target="_blank"
           className="text-ajvar transition-all underline underline-offset-4 "
+        >
+          Ivano did it!
+        </Link>
+      </div> */}
+      <div
+        className={`content-container flex items-center justify-center mx-auto pt-4 pb-0 md:pt-8 md:pb-8 text-lg ${className} md:h-[10vh]`}
+      >
+        <div className="text-xl">
+          <p className="text-center">
+            &copy; Ajvar Studio. All rights reserved.
+          </p>
+        </div>
+      </div>
+      <div className="py-4 text-center md:absolute md:right-4 md:top-[2vh]">
+        <Link
+          href="https://github.com/ivano-uglik"
+          target="_blank"
+          className="text-ajvar transition-all underline underline-offset-4 inline "
         >
           Ivano did it!
         </Link>

@@ -38,7 +38,7 @@ export default function OurService({ className }: { className?: string }) {
   ];
 
   return (
-    <section className="bg-[#FFFBF2] pt-32 pb-8 rounded-t-3xl lg:rounded-t-[5rem]">
+    <section className="bg-[#FFFBF2] pt-16 pb-8 rounded-t-3xl lg:rounded-t-[5rem]">
       <div className="content-container mx-auto px-8">
         <div>
           <h1
